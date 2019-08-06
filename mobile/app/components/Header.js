@@ -1,11 +1,11 @@
-import React, {View} from 'react'
+import React from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native'
 
 export default function Header (props) {
     return (
         <View style={style.header}>
-            <Text style={style.leftContent}>Apptitoso</Text>
-            <View style={style.rightContent}>
+            <Text style={style.texto}>Apptitoso</Text>
+            <View style={style.headerIcons}>
                 <Image
                     style={style.icon}
                     source={require('../assets/home.png')}  />
@@ -19,17 +19,20 @@ export default function Header (props) {
 
 const style = StyleSheet.create({
     icon: {
-        height: 20,
+        height: 25,
+        width: 25,
+    },
+    texto: {
+        fontSize: 20,
     },
     header: {
         flex: .05,
         flexDirection: 'row',
-        backgroundColor: 'red',
+        justifyContent: 'space-between',
+        backgroundColor: '#f49678',
     },
-    rightContent: {
+    headerIcons: {
+        flexDirection: 'row',
         justifyContent: 'flex-end',
-    },
-    leftContent: {
-        justifyContent: 'flex-start',
     }
 })
