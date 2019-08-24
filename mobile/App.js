@@ -1,9 +1,9 @@
 import React from 'react'
-import SignUpScreen from './app/screens/SignUpScreen/SignUpScreen'
+import PerfilScreen from './app/screens/PerfilScreen/PerfilScreen'
 
 function App () {
     return (
-        <SignUpScreen />
+        <PerfilScreen />
     );
 }
 

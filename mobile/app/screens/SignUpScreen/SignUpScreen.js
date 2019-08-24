@@ -4,26 +4,26 @@ import style from './style'
 import Header from '../../components/Header/Header'
 
 export default function () {
-    return ( 
+    return (
         <View style={style.container}>
             <Header />
-            <Image 
+            <Image
                 style={style.logo}
                 source={require('../../assets/logo.png')} />
             <View style={style.inputsContainer}>
-                <TextInput 
+                <TextInput
                     style={style.input}
                     placeholder={"Primeiro nome"}/>
-                <TextInput 
+                <TextInput
                     style={style.input}
                     placeholder={"Sobrenome"}/>
-                <TextInput 
+                <TextInput
                     style={style.input}
                     placeholder={"E-mail"}/>
-                <TextInput 
+                <TextInput
                     style={style.input}
                     placeholder={"Senha"}/>
-                <TextInput 
+                <TextInput
                     style={style.input}
                     placeholder={"Confirmar senha"}/>
                 <TouchableHighlight style={style.button}>
