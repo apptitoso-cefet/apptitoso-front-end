@@ -4,7 +4,7 @@ import style from './style'
 
 export default function Header (props) {
     return (
-        <View style={style.header}>
+        <View style={{...style.header, ...props.style}}>
             <Text style={style.text}>Apptitoso</Text>
             <View style={style.headerIcons}>
                 <Image
