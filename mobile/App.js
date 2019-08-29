@@ -1,9 +1,9 @@
 import React from 'react'
-import PerfilScreen from './app/screens/PerfilScreen'
+import PostedRecipesScreen from './app/screens/PostedRecipesScreen'
 
 function App () {
     return (
-        <PerfilScreen />
+        <PostedRecipesScreen />
     );
 }
 
