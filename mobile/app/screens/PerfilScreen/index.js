@@ -12,7 +12,7 @@ export default function () {
         <View style={style.container}>
             <Header />
             <PerfilPhotoContainer />
-            <View style={style.containerField}>
+            <View style={style.campoContainer}>
               <InfoField textName="E-mail" />
               <InfoField textName="Nome" />
               <InfoField textName="Informações da conta" />

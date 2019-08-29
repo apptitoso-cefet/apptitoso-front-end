@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, Image } from 'react-native'
 import style from './style'
 
-export default function InfoField (props) {
+export default function CampoInformacao (props) {
 
     return (
         <View style={style.campo}>
