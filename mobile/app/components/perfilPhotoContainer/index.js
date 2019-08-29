@@ -14,7 +14,7 @@ export default function PerfilPhotoContainer (props) {
                 style={style.photo}
                 source={require('../../assets/placeholderPhoto.jpg')} />
             <View style={style.perfilData}>
-                <Text style={style.userName}>Ricardao</Text>
+                <Text style={style.userName}>Ricardo</Text>
                 <Text style={style.userCity}>Belô, MG</Text>
             </View>
         </View>

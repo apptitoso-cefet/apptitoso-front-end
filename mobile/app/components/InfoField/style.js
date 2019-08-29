@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native'
 
 const style = StyleSheet.create({
-    seta: {
+    arrow: {
         height: 25,
         width: 25,
         marginRight: 10,
@@ -14,7 +14,7 @@ const style = StyleSheet.create({
         color: '#1f1f1f',
         alignSelf: 'center'
     },
-    campo: {
+    field: {
         flex: .6,
         flexDirection: 'row',
         backgroundColor: '#ffffff',

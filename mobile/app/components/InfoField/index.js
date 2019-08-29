@@ -5,10 +5,10 @@ import style from './style'
 export default function CampoInformacao (props) {
 
     return (
-        <View style={style.campo}>
+        <View style={style.field}>
             <Text style={style.text} >{props.textName}</Text>
             <Image
-                style={style.seta}
+                style={style.arrow}
                 source={require('../../assets/rightArrow.png')}  />
         </View>
     )
