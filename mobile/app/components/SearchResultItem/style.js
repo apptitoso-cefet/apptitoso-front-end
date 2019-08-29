@@ -16,6 +16,11 @@ const style = StyleSheet.create({
     text: {
         flex: 4,
         alignSelf: 'center',
+        paddingStart: 10
+    },
+    icon: {
+        alignSelf: 'center',
+        fontSize: 50 
     }
 })
 

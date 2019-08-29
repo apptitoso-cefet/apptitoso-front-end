@@ -1,9 +1,9 @@
 import React from 'react'
-import PostedRecipesScreen from './app/screens/PostedRecipesScreen'
+import SearchResultsScheen from './app/screens/SearchResultsScreen'
 
 function App () {
     return (
-        <PostedRecipesScreen />
+        <SearchResultsScheen />
     );
 }
 

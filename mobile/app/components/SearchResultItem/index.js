@@ -11,7 +11,7 @@ const SearchResultItem = (props) => {
         <View style={{...style.container, ...props.style}}>
             <Image resizeMode='contain' style={style.image} source={imageSrc} />
             <Text style={style.text}>{name}</Text>
-            <Icon name='chevron-right'/>
+            <Icon style={style.icon} name='chevron-right'/>
         </View>
     )
 }
