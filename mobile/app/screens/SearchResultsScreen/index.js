@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-import Header from '../../components/Header/Header'
+import Header from '../../components/Header'
 import SearchField from '../../components/SearchField'
 import SearchResult from '../../components/SearchResult'
 

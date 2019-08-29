@@ -18,7 +18,7 @@ const style = StyleSheet.create({
         width: 120,
         borderRadius: 60
     },
-    campoContainer: {
+    containerField: {
         flex: 4.5,
         flexDirection: 'column',
         justifyContent: 'center',
