@@ -1,7 +1,7 @@
 import React from 'react'
 import { TouchableHighlight, Image, Text, TextInput, View } from 'react-native'
 import style from './style'
-import Header from '../../components/Header/Header'
+import Header from '../../components/Header'
 
 export default function () {
     return (

@@ -9,7 +9,7 @@ export default function CampoInformacao (props) {
             <Text style={style.text} >{props.textName}</Text>
             <Image
                 style={style.seta}
-                source={require('../../assets/setaPDireita.png')}  />
+                source={require('../../assets/rightArrow.png')}  />
         </View>
     )
 }

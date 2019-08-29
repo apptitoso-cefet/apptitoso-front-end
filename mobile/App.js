@@ -1,5 +1,5 @@
 import React from 'react'
-import PerfilScreen from './app/screens/PerfilScreen/PerfilScreen'
+import PerfilScreen from './app/screens/PerfilScreen'
 
 function App () {
     return (

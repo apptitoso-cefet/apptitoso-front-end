@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, Image } from 'react-native'
 import style from './style'
 
-export default function perfilPhotoContainer (props) {
+export default function PerfilPhotoContainer (props) {
 
     return (
       <View style={style.photoContainer}>
