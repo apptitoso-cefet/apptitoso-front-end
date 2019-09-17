@@ -4,14 +4,13 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 import style from './style'
 
-const SearchResultItem = (props) => {
-    const {name, imageSrc} = props
-
+const SearchResultItem = props => {
+    const { name, imageSrc } = props
     return (
-        <View style={{...style.container, ...props.style}}>
+        <View style={{ ...style.container, ...props.style }}>
             <Image resizeMode='contain' style={style.image} source={imageSrc} />
             <Text style={style.text}>{name}</Text>
-            <Icon style={style.icon} name='chevron-right'/>
+            <Icon style={style.icon} name='chevron-right' />
         </View>
     )
 }
