@@ -10,10 +10,10 @@ const style = StyleSheet.create({
     },
     input: {
         margin: 5,
-        width: 320,
-        padding: 10,
+        width: 300,
+        height: 60,
+        padding: 5,
         borderWidth: 1.5,
-        borderColor: 'grey',
         alignSelf: 'center',
         backgroundColor: 'white',
     },
@@ -21,20 +21,17 @@ const style = StyleSheet.create({
         flex: 6,
         flexDirection: 'column',
         justifyContent: 'center',
-        backgroundColor: '#f49678',
+        backgroundColor: '#6200ee',
     },
     button: {
-        backgroundColor: '#f5c7b3',
-        justifyContent: 'center',
-        alignItems: 'center',
+        backgroundColor: 'white',
         alignSelf: 'center',
-        height: 40,
-        width: 315,
+        width: 300,
         margin: 5,
     },
     text: {
         fontSize: 17,
-    }
+    },
 })
 
 export default style

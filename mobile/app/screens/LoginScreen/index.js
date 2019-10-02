@@ -1,29 +1,32 @@
 import React from 'react'
-import { TouchableHighlight, Image, Text, TextInput, View } from 'react-native'
+import { Image, View } from 'react-native'
+import { Appbar, BottomNavigation, Button, TextInput } from 'react-native-paper'
 import style from './style'
-import Header from '../../components/Header'
 
-export default function () {
-    return ( 
+export default function() {
+    return (
         <View style={style.container}>
-            <Header />
-            <Image 
+            <Appbar.Header>
+                <Appbar.BackAction />
+                <Appbar.Content title='Apptitoso' subtitle='oi' />
+            </Appbar.Header>
+            <Image
                 style={style.logo}
-                source={require('../../assets/logo.png')} />
+                source={require('../../assets/logo.png')}
+            />
             <View style={style.inputsContainer}>
-                <TextInput 
+                <TextInput
                     style={style.input}
-                    placeholder={"E-mail"}
-                    keyboardType={"email-address"}/>
-                <TextInput 
+                    label={'E-mail'}
+                    keyboardType={'email-address'}
+                />
+                <TextInput
                     style={style.input}
-                    placeholder={"Senha"}/>
-                <TouchableHighlight style={style.button}>
-                    <Text style={style.text}>Entrar</Text>
-                </TouchableHighlight>
-                <TouchableHighlight style={style.button}>
-                    <Text style={style.text}>Cadastrar</Text>
-                </TouchableHighlight>
+                    label={'Senha'}
+                    keyboardType={'default'}
+                />
+                <Button style={style.button}>Entrar</Button>
+                <Button style={style.button}>Cadastrar</Button>
             </View>
         </View>
     )

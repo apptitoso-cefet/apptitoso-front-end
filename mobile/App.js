@@ -1,11 +1,11 @@
 import React from 'react'
 import { Provider as PaperProvider } from 'react-native-paper'
-import SearchResultsScheen from './app/screens/SearchResultsScreen'
+import LoginScreen from './app/screens/LoginScreen'
 
 function App() {
     return (
         <PaperProvider>
-            <SearchResultsScheen />
+            <LoginScreen />
         </PaperProvider>
     )
 }
