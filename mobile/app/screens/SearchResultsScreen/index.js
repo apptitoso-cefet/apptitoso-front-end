@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
 
 import Header from '../../components/MaterialHeader'
 import SearchField from '../../components/SearchField'
@@ -10,7 +10,7 @@ import style from './style'
 const SearchResultsScreen = props => {
     return (
         <View style={style.container}>
-            <Header />
+            <Header showBackAction />
             <SearchField style={style.searchField} />
             <SearchResult style={style.result} />
         </View>
