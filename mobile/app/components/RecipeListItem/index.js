@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 import style from './style'
 
-const SearchResultItem = props => {
+const RecipeListItem = props => {
     const { name, imageSrc } = props
     return (
         <View style={{ ...style.container, ...props.style }}>
@@ -15,4 +15,4 @@ const SearchResultItem = props => {
     )
 }
 
-export default SearchResultItem
+export default RecipeListItem

@@ -2,7 +2,7 @@ import React from 'react'
 import { FlatList, View } from 'react-native'
 import { Text } from 'react-native-paper'
 
-import SearchResultItem from '../SearchResultItem'
+import RecipeListItem from '../RecipeListItem'
 
 import style from './styles'
 
@@ -56,10 +56,7 @@ const SearchResult = props => {
                 style={style.list}
                 data={listData}
                 renderItem={({ item }) => (
-                    <SearchResultItem
-                        name={item.name}
-                        imageSrc={item.imageSrc}
-                    />
+                    <RecipeListItem name={item.name} imageSrc={item.imageSrc} />
                 )}
                 ListEmptyComponent={() => (
                     <Text>Desculpe, não há resultados</Text>
