@@ -1,14 +1,11 @@
 import React from 'react'
 import { View } from 'react-native'
-import { Appbar } from 'react-native-paper'
+import Header from '../../components/MaterialHeader'
 
 const Test = props => {
     return (
         <View>
-            <Appbar.Header>
-                <Appbar.BackAction />
-                <Appbar.Content title='Apptitoso' subtitle='oi' />
-            </Appbar.Header>
+            <Header showBackAction />
         </View>
     )
 }

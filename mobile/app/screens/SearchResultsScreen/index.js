@@ -1,10 +1,8 @@
 import React from 'react'
 import { View } from 'react-native'
-
 import Header from '../../components/MaterialHeader'
 import SearchField from '../../components/SearchField'
 import SearchResult from '../../components/SearchResult'
-
 import style from './style'
 
 const SearchResultsScreen = props => {
