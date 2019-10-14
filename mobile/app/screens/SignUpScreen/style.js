@@ -9,32 +9,29 @@ const style = StyleSheet.create({
         width: 420,
     },
     input: {
-        margin: 1.5,
-        width: 320,
-        padding: 10,
+        margin: 5,
+        width: 300,
+        height: 55,
+        padding: 5,
         borderWidth: 1.5,
-        borderColor: 'grey',
         alignSelf: 'center',
         backgroundColor: 'white',
     },
     inputsContainer: {
-        flex: 6,
+        flex: 9,
         flexDirection: 'column',
         justifyContent: 'center',
-        backgroundColor: '#f49678',
+        backgroundColor: '#6200ee',
     },
     button: {
-        backgroundColor: '#f5c7b3',
-        justifyContent: 'center',
-        alignItems: 'center',
+        backgroundColor: 'white',
         alignSelf: 'center',
-        height: 40,
-        width: 315,
-        margin: 3,
+        width: 300,
+        margin: 5,
     },
     text: {
         fontSize: 17,
-    }
+    },
 })
 
 export default style
