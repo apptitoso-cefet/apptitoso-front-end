@@ -1,38 +1,27 @@
 import React from 'react'
-import { TouchableHighlight, Image, Text, TextInput, View } from 'react-native'
+import { Image, View } from 'react-native'
+import { Button, TextInput } from 'react-native-paper'
+import Header from '../../components/MaterialHeader'
 import style from './style'
-import Header from '../../components/Header'
 
-export default function () {
+const SignUpScreen = props => {
     return (
         <View style={style.container}>
-            <Header />
+            <Header showBackAction />
             <Image
                 style={style.logo}
-                source={require('../../assets/logo.png')} />
+                source={require('../../assets/logo.png')}
+            />
             <View style={style.inputsContainer}>
-                <TextInput
-                    style={style.input}
-                    placeholder={"Primeiro nome"}/>
-                <TextInput
-                    style={style.input}
-                    placeholder={"Sobrenome"}/>
-                <TextInput
-                    style={style.input}
-                    placeholder={"E-mail"}/>
-                <TextInput
-                    style={style.input}
-                    placeholder={"Senha"}/>
-                <TextInput
-                    style={style.input}
-                    placeholder={"Confirmar senha"}/>
-                <TouchableHighlight style={style.button}>
-                    <Text style={style.text}>Cadastrar</Text>
-                </TouchableHighlight>
-                <TouchableHighlight style={style.button}>
-                    <Text style={style.text}>Entrar</Text>
-                </TouchableHighlight>
+                <TextInput style={style.input} label={'Primeiro nome'} />
+                <TextInput style={style.input} label={'Sobrenome'} />
+                <TextInput style={style.input} label={'E-mail'} />
+                <TextInput style={style.input} label={'Senha'} />
+                <TextInput style={style.input} label={'Confirmar senha'} />
+                <Button style={style.button}>Cadastrar</Button>
+                <Button style={style.button}>Entrar</Button>
             </View>
         </View>
     )
 }
+export default SignUpScreen
