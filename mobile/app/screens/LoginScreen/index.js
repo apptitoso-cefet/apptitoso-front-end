@@ -1,15 +1,13 @@
 import React from 'react'
 import { Image, View } from 'react-native'
-import { Appbar, BottomNavigation, Button, TextInput } from 'react-native-paper'
+import { Button, TextInput } from 'react-native-paper'
+import Header from '../../components/MaterialHeader'
 import style from './style'
 
-export default function() {
+const LoginScreen = props => {
     return (
         <View style={style.container}>
-            <Appbar.Header>
-                <Appbar.BackAction />
-                <Appbar.Content title='Apptitoso' subtitle='oi' />
-            </Appbar.Header>
+            <Header />
             <Image
                 style={style.logo}
                 source={require('../../assets/logo.png')}
@@ -31,3 +29,5 @@ export default function() {
         </View>
     )
 }
+
+export default LoginScreen
