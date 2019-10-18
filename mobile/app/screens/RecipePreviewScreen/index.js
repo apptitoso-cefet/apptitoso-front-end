@@ -7,6 +7,7 @@ import RecipeDetailField from '../../components/RecipeDetailField'
 import RecipeProperties from '../../components/RecipeProperties'
 import style from './style'
 
+import EvaluationModal from '../../components/EvaluationModal' //EvaluationModal (Testing Purposes)
 
 const description = 'O pão de queijo é a receita perfeita para o seu lanche da tarde! Delicioso, ele combina com o café quentinho ou um suco bem gelado.'
 
@@ -33,9 +34,13 @@ const recipeProps = { key: '1',
                       photo: require('../../assets/recipePlaceholder.png') }
 
 export default function(props) {
-  const [expanded, setExpanded] = useState(false)
+  const [expanded, setExpanded] = useState(false);
+  const [visible, setVisible] = useState(false); //EvaluationModal (Testing Purposes)
+  const [saved, setSaved] = useState(false);
     return (
         <View style={style.container}>
+
+          <EvaluationModal visible={visible} onDismiss={() => {setVisible(false)}}/>
 
           <MaterialHeader showBackAction/>
 
@@ -46,11 +51,13 @@ export default function(props) {
                 <IconButton
                   color= "white"
                   size= {36}
-                  icon={require('../../assets/share.png')}/>
+                  icon={require('../../assets/share.png')}
+                  onPress={() => {setVisible(true)/*EvaluationModal (Testing Purposes)*/}}/> 
                 <IconButton
                   color= "white"
                   size= {36}
-                  icon={require('../../assets/saveEmpty.png')}/>
+                  icon={saved ? require('../../assets/saveFilled.png') : require('../../assets/saveEmpty.png')}
+                  onPress={() => {setSaved(!saved)}}/>
               </View>
             </ImageBackground>
             <ScrollView contentContainerStyle={style.scrollView}>
