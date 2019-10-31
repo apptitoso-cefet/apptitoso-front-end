@@ -1,23 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Image, Text, View } from 'react-native'
-import { Checkbox } from 'react-native-paper'
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import { Checkbox, TouchableRipple } from 'react-native-paper'
 import style from './style'
 
-const RecipeListItem = props => {
-    const { name, imageSrc } = props
+const StepListItem = props => {
+    const [checked, setChecked] = useState(false)
+    const { name, imageSrc, move, moveEnd } = props
     return (
-        <View style={{ ...style.container, ...props.style }}>
-            <Image resizeMode='contain' style={style.image} source={imageSrc} />
-            <Text style={style.text}>{name}</Text>
-            <Checkbox
-            //status={checked ? 'checked' : 'unchecked'}
-            //onPress={() => {
-            //    this.setState({ checked: !checked })
-            //}}
-            />
-        </View>
+        <TouchableRipple
+            onLongPress={() => console.log('Pressed')}
+            onPressOut={() => console.log('Unpressed')}
+        >
+            <View style={{ ...style.container, ...props.style }}>
+                <Image
+                    resizeMode='contain'
+                    style={style.image}
+                    source={imageSrc}
+                />
+                <Text style={style.text}>{name}</Text>
+                <Checkbox
+                    status={checked ? 'checked' : 'unchecked'}
+                    onPress={() => {
+                        setChecked(!checked)
+                    }}
+                />
+            </View>
+        </TouchableRipple>
     )
 }
 
-export default RecipeListItem
+export default StepListItem

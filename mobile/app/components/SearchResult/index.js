@@ -1,10 +1,8 @@
 import React from 'react'
 import { FlatList, View } from 'react-native'
 import { Text } from 'react-native-paper'
-
 import RecipeListItem from '../RecipeListItem'
-
-import style from './styles'
+import style from './style'
 
 const listData = [
     {

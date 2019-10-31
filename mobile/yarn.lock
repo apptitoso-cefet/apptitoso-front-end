@@ -5355,6 +5355,16 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-native-draggable-dynamic-flatlist@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-draggable-dynamic-flatlist/-/react-native-draggable-dynamic-flatlist-1.0.2.tgz#fc8f4ee51439fe70e9a32c1f8a69aef572a550e9"
+  integrity sha512-XmvW+hx8DdRByklj/3zw0SOWs145Pm/NpdhER9L0VU36r8GaTRTwsvmdth5T5YET0R8jas2qjvGaoGiA3Gjfnw==
+
+react-native-draggable-flatlist@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/react-native-draggable-flatlist/-/react-native-draggable-flatlist-1.1.9.tgz#b8f58122f639841c83aa1d913b2e3e9f9507bfe5"
+  integrity sha512-Hga/kEFc+Undx2Y1FzkozWHRWvRz7dJobl5Kg1+xmd9JABS8YIYZWKboSAPmiTHD3FrlVJGIw/mlK5JZP0rJfw==
+
 react-native-gesture-handler@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.4.1.tgz#c38d9e57637b95e221722a79f2bafac62e3aeb21"

@@ -1,18 +1,16 @@
 import React from 'react'
 import { View } from 'react-native'
-
-import Header from '../../components/Header'
-import SearchResult from '../../components/SearchResult'
-
+import MaterialHeader from '../../components/MaterialHeader'
+import PostedRecipesList from '../../components/PostedRecipesList'
 import style from './style'
 
-const SearchResultsScreen = (props) => {
+const PostedRecipesScreen = props => {
     return (
         <View style={style.container}>
-            <Header style={style.header} />
-            <SearchResult style={style.result} />
+            <MaterialHeader style={style.header} />
+            <PostedRecipesList style={style.result} />
         </View>
     )
 }
 
-export default SearchResultsScreen
+export default PostedRecipesScreen
