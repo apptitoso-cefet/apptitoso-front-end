@@ -5,20 +5,20 @@ const style = StyleSheet.create({
         flex: 1,
     },
     logo: {
-        flex: 3.6,
+        flex: 3,
         width: 420,
     },
     input: {
-        margin: 5,
-        width: 300,
-        height: 55,
-        padding: 5,
-        borderWidth: 1.5,
+        margin: 2.5,
+        width: 320,
+        height: 50,
+        padding: 0.5,
+        borderRadius: 5,
         alignSelf: 'center',
         backgroundColor: 'white',
     },
     inputsContainer: {
-        flex: 9,
+        flex: 8,
         flexDirection: 'column',
         justifyContent: 'center',
         backgroundColor: '#6200ee',
@@ -26,11 +26,12 @@ const style = StyleSheet.create({
     button: {
         backgroundColor: 'white',
         alignSelf: 'center',
-        width: 300,
+        width: 320,
+        height: 40,
         margin: 5,
     },
     text: {
-        fontSize: 17,
+        fontSize: 1,
     },
 })
 

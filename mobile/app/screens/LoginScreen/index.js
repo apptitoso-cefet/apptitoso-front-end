@@ -4,7 +4,7 @@ import { Button, TextInput } from 'react-native-paper'
 import Header from '../../components/MaterialHeader'
 import style from './style'
 
-const LoginScreen = props => {
+const LoginScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
             <Header />
@@ -24,7 +24,14 @@ const LoginScreen = props => {
                     keyboardType={'default'}
                 />
                 <Button style={style.button}>Entrar</Button>
-                <Button style={style.button}>Cadastrar</Button>
+                <Button
+                    style={style.button}
+                    onPress={() => {
+                        navigation.navigate('SignUpScreen')
+                    }}
+                >
+                    Cadastrar
+                </Button>
             </View>
         </View>
     )

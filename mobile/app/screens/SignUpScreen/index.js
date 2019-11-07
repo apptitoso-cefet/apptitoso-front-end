@@ -4,7 +4,7 @@ import { Button, TextInput } from 'react-native-paper'
 import Header from '../../components/MaterialHeader'
 import style from './style'
 
-const SignUpScreen = props => {
+const SignUpScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
             <Header showBackAction />
@@ -19,7 +19,14 @@ const SignUpScreen = props => {
                 <TextInput style={style.input} label={'Senha'} />
                 <TextInput style={style.input} label={'Confirmar senha'} />
                 <Button style={style.button}>Cadastrar</Button>
-                <Button style={style.button}>Entrar</Button>
+                <Button
+                    style={style.button}
+                    onPress={() => {
+                        navigation.navigate('LoginScreen')
+                    }}
+                >
+                    Entrar
+                </Button>
             </View>
         </View>
     )
