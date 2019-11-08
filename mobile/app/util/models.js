@@ -1,8 +1,3 @@
-// class CulinaryConcept(models.Model):
-//     name = models.CharField(max_length=50)
-//     picture = models.ImageField(null=True, blank=True)
-//     description = models.TextField(default='')
-
 class CulinaryConcept {
     constructor(name, description, picture, id = null) {
         this._name = name
@@ -40,6 +35,50 @@ class CulinaryConcept {
     }
 }
 
+class User {
+    constructor(email, firstName, lastName, picture, id = null) {
+        this._email = email
+        this._firstName = firstName
+        this._lastName = lastName
+        this._picture = picture
+        this._id = id
+    }
+
+    get email() {
+        return this._email
+    }
+
+    set email(email) {
+        this._email = email
+    }
+    get firstName() {
+        return this._firstName
+    }
+
+    set firstName(firstName) {
+        this._firstName = firstName
+    }
+
+    get lastName() {
+        return this._lastName
+    }
+
+    set lastName(lastName) {
+        this._lastName = lastName
+    }
+
+    get lastName() {
+        return this._lastName
+    }
+
+    set lastName(lastName) {
+        this._lastName = lastName
+    }
+
+    get name() {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
 // class User(models.Model):
 //     user = models.ForeignKey(authModels.User, models.PROTECT)
 //     picture = models.ImageField(null=True, blank=True)
