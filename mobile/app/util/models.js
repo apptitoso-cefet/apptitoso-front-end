@@ -1,143 +1,78 @@
 class CulinaryConcept {
-    constructor(name, description, picture, id = null) {
-        this._name = name
-        this._description = description
-        this._picture = picture
-        this._id = id
-    }
-
-    get name() {
-        return this._name
-    }
-
-    set name(name) {
+    constructor(name, description, picture = null, id = null) {
         this.name = name
-    }
-
-    get description() {
-        return this._description
-    }
-
-    set description(description) {
         this.description = description
-    }
-
-    get picture() {
-        return this._picture
-    }
-
-    set picture(picture) {
         this.picture = picture
-    }
-
-    get id() {
-        return this._id
+        this.id = id
     }
 }
 
 class User {
+    recipes = []
+
     constructor(email, firstName, lastName, picture, id = null) {
-        this._email = email
-        this._firstName = firstName
-        this._lastName = lastName
-        this._picture = picture
-        this._id = id
-    }
-
-    get email() {
-        return this._email
-    }
-
-    set email(email) {
-        this._email = email
-    }
-    get firstName() {
-        return this._firstName
-    }
-
-    set firstName(firstName) {
-        this._firstName = firstName
-    }
-
-    get lastName() {
-        return this._lastName
-    }
-
-    set lastName(lastName) {
-        this._lastName = lastName
-    }
-
-    get lastName() {
-        return this._lastName
-    }
-
-    set lastName(lastName) {
-        this._lastName = lastName
-    }
-
-    get name() {
-        return `${this.firstName} ${this.lastName}`
+        this.email = email
+        this.firstName = firstName
+        this.lastName = lastName
+        this.picture = picture
+        this.id = id
     }
 }
-// class User(models.Model):
-//     user = models.ForeignKey(authModels.User, models.PROTECT)
-//     picture = models.ImageField(null=True, blank=True)
+class Recipe {
+    evaluation = null
+    steps = []
 
-//     saved_recipes = models.ManyToManyField(
-//         'Recipe', blank=True, related_name="user_recipe")
+    constructor(name, description, picture, user, categories = [], id = null) {
+        this.name = name
+        this.description = description
+        this.picture = picture
+        this.user = user
+        this.id = id
+        this.categories = categories
+    }
+}
 
-// class Recipe(models.Model):
-//     name = models.CharField(max_length=100)
-//     description = models.TextField()
-//     picture = models.BinaryField(null=True)
-//     user_profile = models.ForeignKey(User, on_delete=models.CASCADE)
+class Category {
+    constructor(name, id) {
+        this.name = name
+        this.id = id
+    }
+}
 
-//     categories = models.ManyToManyField('Category', blank=True)
+class Step {
+    constructor(recipe, description, stepOrder, timer, picture, id) {
+        this.recipe = recipe
+        this.description = description
+        this.stepOrder = stepOrder
+        this.picture = picture
+        this.timer = timer
+        this.id = id
+    }
+}
 
-//     def __str__(self):
-//         return self.name
+class Ingredient {
+    constructor(description, id) {
+        this.description = description
+        this.id = id
+    }
+}
 
-// class Category(models.Model):
-//     class Meta:
-//         verbose_name_plural = 'Categories'
-//     name = models.CharField(max_length=50)
+class RecipeIngredient {
+    constructor(recipe, ingredient, unitOfMeasurement, quantity, id) {
+        this.recipe = recipe
+        this.ingredient = ingredient
+        this.unitOfMeasurement = unitOfMeasurement
+        this.quantity = quantity
+        this.id = id
+    }
+}
 
-// class Step(models.Model):
-//     recipe = models.ForeignKey('Recipe', on_delete=models.CASCADE)
-//     description = models.TextField()
-//     step_order = models.IntegerField()
-//     picture = models.BinaryField(null=True)
-//     timer = models.OneToOneField(
-//         'StepTimer', on_delete=models.CASCADE, null=True, blank=True)
-
-// class StepTimer(models.Model):
-//     time = models.DurationField()
-
-// class Ingredient(models.Model):
-//     description = models.CharField(max_length=50)
-
-// class UnitOfMeasurement(models.Model):
-//     class Meta:
-//         verbose_name_plural = 'Units of Measurement'
-//     name = models.CharField(max_length=50)
-
-// class RecipeIngredient(models.Model):
-//     recipe = models.ForeignKey('Recipe', on_delete=models.CASCADE)
-//     ingredient = models.ForeignKey(
-//         'Ingredient', on_delete=models.CASCADE, null=True)
-//     unit_of_measurement = models.ForeignKey(
-//         'UnitOfMeasurement', on_delete=models.CASCADE)
-//     quantity = models.DecimalField(
-//         max_digits=10, decimal_places=2, null=True, blank=True)
-
-// class EvaluationCriterion(models.Model):
-//     class Meta:
-//         verbose_name_plural: 'Evaluation criteria'
-//     name = models.CharField(null=True, max_length=40)
-
-// class Evaluation(models.Model):
-//     usuario = models.ForeignKey('User', on_delete=models.CASCADE)
-//     recipe = models.ForeignKey('Recipe', on_delete=models.CASCADE)
-//     evaluation_criterion = models.ForeignKey(
-//         'EvaluationCriterion', on_delete=models.CASCADE)
-//     note = models.PositiveSmallIntegerField(null=True)
+class Evaluation {
+    constructor(usuario, recipe, evaluatioCriterion, note, id) {
+        this.usuario = usuario
+        this.recipe = recipe
+        this.evaluatioCriterion = evaluatioCriterion
+        this.note = note
+        this.id = id
+    }
+}
