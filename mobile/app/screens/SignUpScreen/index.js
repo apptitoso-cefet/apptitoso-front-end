@@ -1,13 +1,13 @@
 import React from 'react'
 import { Image, View } from 'react-native'
-import { Button, TextInput } from 'react-native-paper'
+import { Button, TextInput, Appbar } from 'react-native-paper'
 import Header from '../../components/MaterialHeader'
 import style from './style'
 
 const SignUpScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
-            <Header showBackAction />
+            <Header showBackAction onPress={navigation.goBack} />
             <Image
                 style={style.logo}
                 source={require('../../assets/logo.png')}
@@ -22,7 +22,7 @@ const SignUpScreen = ({ navigation }) => {
                 <Button
                     style={style.button}
                     onPress={() => {
-                        navigation.navigate('LoginScreen')
+                        navigation.navigate('Login')
                     }}
                 >
                     Entrar
@@ -30,5 +30,10 @@ const SignUpScreen = ({ navigation }) => {
             </View>
         </View>
     )
+}
+
+SignUpScreen.navigationOptions = {
+    title: 'SignUp',
+    header: null,
 }
 export default SignUpScreen

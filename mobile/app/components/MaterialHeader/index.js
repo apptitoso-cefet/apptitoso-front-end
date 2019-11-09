@@ -4,13 +4,20 @@ import PropTypes from 'prop-types'
 
 const MaterialHeader = props => (
     <Appbar.Header>
-        {props.showBackAction && <Appbar.BackAction />}
+        {props.showBackAction && (
+            <Appbar.BackAction
+                onPress={() => {
+                    props.onPress()
+                }}
+            />
+        )}
         <Appbar.Content title='Apptitoso' />
     </Appbar.Header>
 )
 
 MaterialHeader.propTypes = {
     showBackAction: PropTypes.bool,
+    onPress: PropTypes.func,
 }
 
 MaterialHeader.defaultProps = {

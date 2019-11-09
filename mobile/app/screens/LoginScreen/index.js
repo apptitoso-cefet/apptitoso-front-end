@@ -27,7 +27,7 @@ const LoginScreen = ({ navigation }) => {
                 <Button
                     style={style.button}
                     onPress={() => {
-                        navigation.navigate('SignUpScreen')
+                        navigation.navigate('SignUp')
                     }}
                 >
                     Cadastrar
@@ -35,6 +35,11 @@ const LoginScreen = ({ navigation }) => {
             </View>
         </View>
     )
+}
+
+LoginScreen.navigationOptions = {
+    title: 'Login',
+    header: null,
 }
 
 export default LoginScreen
