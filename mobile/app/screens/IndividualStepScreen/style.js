@@ -2,25 +2,30 @@ import { StyleSheet } from 'react-native'
 export const style = StyleSheet.create({
     button: {
         height: 40,
-        width: 200,
+        width: 170,
+        marginLeft: 25,
+        marginTop: 20,
     },
     buttonsContainer: {
         flex: 1,
         flexDirection: 'row',
-        justifyContent: 'space-between',
     },
     container: {
         flex: 1,
     },
     text: {
         alignSelf: 'center',
-        flex: 5,
+        padding: 10,
+        fontSize: 18,
+        flex: 4,
     },
     title: {
-        flex: 3,
+        flex: 2.5,
         alignSelf: 'center',
         textAlignVertical: 'center',
-        fontSize: 50,
+        textAlign: 'center',
+        lineHeight: 50,
+        fontSize: 45,
         padding: 5,
     },
 })
