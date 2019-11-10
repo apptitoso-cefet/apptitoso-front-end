@@ -9,12 +9,11 @@ import PerfilPhotoContainer from '../../components/PerfilPhotoContainer'
 export default function() {
     return (
         <View style={style.container}>
-            <Header showBackAction />
+            <Header />
             <PerfilPhotoContainer />
             <View style={style.containerField}>
-                <InfoField textName='E-mail' />
                 <InfoField textName='Nome' />
-                <InfoField textName='Informações da conta' />
+                <InfoField textName='E-mail' />
                 <InfoField textName='Excluir conta' />
                 <LogoutField />
             </View>
