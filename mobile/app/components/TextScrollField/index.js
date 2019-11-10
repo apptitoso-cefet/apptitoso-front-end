@@ -7,7 +7,7 @@ export const TextScrollField = props => {
     return (
         <ScrollView style={props.style}>
             {props.title && <Title>{props.title}</Title>}
-            <Text>{props.content}</Text>
+            <Text style={props.style}>{props.content}</Text>
         </ScrollView>
     )
 }
