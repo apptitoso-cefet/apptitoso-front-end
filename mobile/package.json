@@ -17,6 +17,7 @@
     "react-native-gesture-handler": "^1.4.1",
     "react-native-paper": "^2.16.0",
     "react-native-reanimated": "^1.2.0",
+    "react-native-tts": "^3.0.0",
     "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^3.12.1",
     "react-navigation-material-bottom-tab-navigator": "^0.1.1"
