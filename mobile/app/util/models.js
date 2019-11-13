@@ -1,4 +1,4 @@
-class CulinaryConcept {
+export class CulinaryConcept {
     constructor(name, description, picture = null, id = null) {
         this.name = name
         this.description = description
@@ -7,7 +7,7 @@ class CulinaryConcept {
     }
 }
 
-class User {
+export class User {
     recipes = []
 
     constructor(email, firstName, lastName, picture, id = null) {
@@ -18,7 +18,7 @@ class User {
         this.id = id
     }
 }
-class Recipe {
+export class Recipe {
     evaluation = null
     steps = []
 
@@ -32,14 +32,14 @@ class Recipe {
     }
 }
 
-class Category {
+export class Category {
     constructor(name, id) {
         this.name = name
         this.id = id
     }
 }
 
-class Step {
+export class Step {
     constructor(recipe, description, stepOrder, timer, picture, id) {
         this.recipe = recipe
         this.description = description
@@ -50,14 +50,14 @@ class Step {
     }
 }
 
-class Ingredient {
+export class Ingredient {
     constructor(description, id) {
         this.description = description
         this.id = id
     }
 }
 
-class RecipeIngredient {
+export class RecipeIngredient {
     constructor(recipe, ingredient, unitOfMeasurement, quantity, id) {
         this.recipe = recipe
         this.ingredient = ingredient
@@ -67,7 +67,7 @@ class RecipeIngredient {
     }
 }
 
-class Evaluation {
+export class Evaluation {
     constructor(usuario, recipe, evaluatioCriterion, note, id) {
         this.usuario = usuario
         this.recipe = recipe
