@@ -3,6 +3,7 @@ import { View } from 'react-native'
 import { Button, Title } from 'react-native-paper'
 import Header from '../../components/MaterialHeader'
 import TextScrollField from '../../components/TextScrollField'
+import EvaluationModal from '../../components/EvaluationModal'
 import { style } from './style'
 
 const DESCR_PASSO = `descrição do passo uhul Lorem ipsum dolor sit amet,
@@ -23,6 +24,7 @@ const IndividualStepScreen = () => {
                     Próximo
                 </Button>
             </View>
+            <EvaluationModal />
         </View>
     )
 }

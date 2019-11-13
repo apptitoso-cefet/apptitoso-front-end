@@ -7,7 +7,7 @@ import style from './style'
 const SignUpScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
-            <Header showBackAction onPress={navigation.goBack} />
+            <Header showBackAction />
             <Image
                 style={style.logo}
                 source={require('../../assets/logo.png')}
@@ -15,6 +15,7 @@ const SignUpScreen = ({ navigation }) => {
             <View style={style.inputsContainer}>
                 <TextInput style={style.input} label={'Primeiro nome'} />
                 <TextInput style={style.input} label={'Sobrenome'} />
+                <TextInput style={style.input} label={'Nome de usuário'} />
                 <TextInput style={style.input} label={'E-mail'} />
                 <TextInput style={style.input} label={'Senha'} />
                 <TextInput style={style.input} label={'Confirmar senha'} />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { BottomNavigation, Text } from 'react-native-paper'
-import AboutScreen from '../screens/AboutScreen'
+import SearchResultsScreen from '../screens/SearchResultsScreen'
 import CulinaryConceptScreen from '../screens/CulinaryConceptScreen'
 import CulinaryConceptsListScreen from '../screens/CulinaryConceptsListScreen'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
@@ -9,7 +9,7 @@ export default MateNavigation = props => {
     const [index, setIndex] = useState(0)
 
     const routes = [
-        { key: 'about', title: 'About', icon: 'info-outline' },
+        { key: 'search', title: 'Search', icon: 'loupe' },
         { key: 'concept', title: 'Concept', icon: 'chef-hat' },
         { key: 'list', title: 'List', icon: 'bars' },
     ]
@@ -19,7 +19,7 @@ export default MateNavigation = props => {
     }
 
     _renderScene = BottomNavigation.SceneMap({
-        about: AboutScreen,
+        search: SearchResultsScreen,
         concept: CulinaryConceptScreen,
         list: CulinaryConceptsListScreen,
     })
