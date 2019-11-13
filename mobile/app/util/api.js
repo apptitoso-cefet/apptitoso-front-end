@@ -21,6 +21,7 @@ export async function getData(url = host, link = '') {
 async function getUser(id) {}
 async function getCulinaryConcept(id) {}
 async function getCulinaryConceptList() {}
+
 async function getRecipeList() {
     const link = 'listRecipe'
     const data = await getData(host, link)
