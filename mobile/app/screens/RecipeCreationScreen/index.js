@@ -40,7 +40,7 @@ const recipeProps = {
     photo: require('../../assets/recipePlaceholder.png'),
 }
 
-const RecipePreviewScreen = ({ navigation }) => {
+const RecipeCreationScreen = ({ navigation }) => {
     const [expanded, setExpanded] = useState(false)
     const [visible, setVisible] = useState(false) //EvaluationModal (Testing Purposes)
     const [saved, setSaved] = useState(false)
@@ -109,9 +109,9 @@ const RecipePreviewScreen = ({ navigation }) => {
     )
 }
 
-RecipePreviewScreen.navigationOptions = {
-    title: 'RecipePreview',
+RecipeCreationScreen.navigationOptions = {
+    title: 'RecipeCreation',
     header: null,
 }
 
-export default RecipePreviewScreen
+export default RecipeCreationScreen
