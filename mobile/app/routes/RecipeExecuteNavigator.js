@@ -4,10 +4,15 @@ import StepsOrderEditionScreen from '../screens/StepsOrderEditionScreen'
 import IndividualStepScreen from '../screens/IndividualStepScreen'
 import { createStackNavigator } from 'react-navigation'
 
-const RecipeExecutionStack = createStackNavigator({
-    RecipePreview: RecipePreviewScreen,
-    StepsOrderEdition: StepsOrderEditionScreen,
-    IndividualStep: IndividualStepScreen,
-})
+const RecipeExecutionStack = createStackNavigator(
+    {
+        RecipePreview: RecipePreviewScreen,
+        StepsOrderEdition: StepsOrderEditionScreen,
+        IndividualStep: IndividualStepScreen,
+    },
+    {
+        initialRouteName: 'RecipePreview',
+    }
+)
 
 export default RecipeExecutionStack

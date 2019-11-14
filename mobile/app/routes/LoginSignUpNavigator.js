@@ -3,9 +3,14 @@ import LoginScreen from '../screens/LoginScreen'
 import SignUpScreen from '../screens/SignUpScreen'
 import { createStackNavigator } from 'react-navigation'
 
-const LoginStack = createStackNavigator({
-    Login: LoginScreen,
-    SignUp: SignUpScreen,
-})
+const LoginStack = createStackNavigator(
+    {
+        Login: LoginScreen,
+        SignUp: SignUpScreen,
+    },
+    {
+        initialRouteName: 'Login',
+    }
+)
 
 export default LoginStack

@@ -3,6 +3,7 @@ import { View } from 'react-native'
 import Header from '../../components/MaterialHeader'
 import { style } from './style'
 import DefaultList from '../../components/DefaultList'
+import BottomTab from '../../routes/BottomTabAppNavigator'
 
 const listData = [
     {
@@ -61,7 +62,7 @@ const CulinaryConceptsListScreen = ({ navigation }) => {
     )
 }
 
-CulinaryConceptListScreen.navigationOptions = {
+CulinaryConceptsListScreen.navigationOptions = {
     title: 'CulinaryConceptsList',
     header: null,
 }

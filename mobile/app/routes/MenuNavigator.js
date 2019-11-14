@@ -6,16 +6,21 @@ import HelpScreen from '../screens/HelpScreen'
 import PerfilScreen from '../screens/PerfilScreen'
 import PostedRecipesScreen from '../screens/PostedRecipesScreen'
 import RecipeCreationScreen from '../screens/RecipeCreationScreen'
-import { createStackNavigator } from 'react-navigation'
+import { createStackNavigator, createAppContainer } from 'react-navigation'
 
-const MenuStack = createStackNavigator({
-    Menu: MenuScreen,
-    About: AboutScreen,
-    CulinaryConceptNav: CulinaryConceptNavigator,
-    Help: HelpScreen,
-    Perfil: PerfilScreen,
-    PostedRecipes: PostedRecipesScreen,
-    RecipeCreation: RecipeCreationScreen,
-})
+const MenuStack = createStackNavigator(
+    {
+        Menu: MenuScreen,
+        About: AboutScreen,
+        CulinaryConceptNav: CulinaryConceptNavigator,
+        Help: HelpScreen,
+        Perfil: PerfilScreen,
+        PostedRecipes: PostedRecipesScreen,
+        RecipeCreation: RecipeCreationScreen,
+    },
+    {
+        initialRouteName: 'Menu',
+    }
+)
 
-export default MenuStack
+export default App = createAppContainer(MenuStack)

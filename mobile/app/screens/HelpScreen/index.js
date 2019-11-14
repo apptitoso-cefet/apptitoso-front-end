@@ -24,7 +24,7 @@ Sed sit amet semper risus. Aenean a dui ac mauris ultricies interdum.
 Integer scelerisque ipsum id laoreet tempus.
 Ut lacus diam, vehicula vitae eros ut, feugiat finibus nunc`
 
-const Help = ({ navigation }) => {
+const HelpScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
             <Header subtitle='Ajuda' showBackAction />
@@ -45,4 +45,4 @@ HelpScreen.navigationOptions = {
     header: null,
 }
 
-export default Help
+export default HelpScreen

@@ -11,9 +11,9 @@ const BottomTab = props => {
 
     const routes = [
         { key: 'home', title: 'Home', icon: 'info-outline' },
-        { key: 'search', title: 'Search', icon: 'bars' },
+        { key: 'search', title: 'Search', icon: 'info-outline' },
         { key: 'saved', title: 'Saved', icon: 'info-outline' },
-        { key: 'menu', title: 'Menu', icon: 'chef-hat' },
+        { key: 'menu', title: 'Menu', icon: 'info-outline' },
     ]
 
     _handleIndexChange = index => {

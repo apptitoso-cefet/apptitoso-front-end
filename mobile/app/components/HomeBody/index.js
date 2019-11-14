@@ -8,12 +8,11 @@ const HomeBody = props => {
     return (
         <View>
             <SectionList
-                style={{ flex: 1 }}
                 keyExtractor={(item, index) => item + index}
                 ItemSeparatorComponent={() => <Divider />}
                 ListEmptyComponent={() => (
                     <Text style={{ textAlign: 'center' }}>
-                        Desculte, não há o que exibir aqui
+                        Desculpe, não há o que exibir aqui
                     </Text>
                 )}
                 renderSectionHeader={({ section: { title } }) => {
@@ -21,7 +20,6 @@ const HomeBody = props => {
                 }}
                 SectionSeparatorComponent={() => <Divider />}
                 renderItem={({ section: { data } }) => {
-                    console.table(data)
                     return <HorizontalList data={data[0]} />
                 }}
                 sections={props.data}

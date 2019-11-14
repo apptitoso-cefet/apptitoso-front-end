@@ -1,11 +1,16 @@
 import React from 'react'
 import CulinaryConceptScreen from '../screens/CulinaryConceptScreen'
-import CulinaryConceptListScreen from '../screens/CulinaryConceptListScreen'
+import CulinaryConceptsListScreen from '../screens/CulinaryConceptsListScreen'
 import { createStackNavigator } from 'react-navigation'
 
-const CulinaryConceptStack = createStackNavigator({
-    CulinaryConcept: CulinaryConceptScreen,
-    CulinaryConceptList: CulinaryConceptListScreen,
-})
+const CulinaryConceptStack = createStackNavigator(
+    {
+        CulinaryConcept: CulinaryConceptScreen,
+        CulinaryConceptsList: CulinaryConceptsListScreen,
+    },
+    {
+        initialRouteName: 'CulinaryConceptsList',
+    }
+)
 
 export default CulinaryConceptStack

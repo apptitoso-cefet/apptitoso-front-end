@@ -7,7 +7,7 @@ import LogoutField from '../../components/LogoutField'
 import PerfilPhotoContainer from '../../components/PerfilPhotoContainer'
 import BottomTab from '../../routes/BottomTabAppNavigator'
 
-const PerfilScren = ({ navigation }) => {
+const PerfilScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
             <Header />
@@ -28,4 +28,4 @@ PerfilScreen.navigationOptions = {
     header: null,
 }
 
-export default PerfilScren
+export default PerfilScreen

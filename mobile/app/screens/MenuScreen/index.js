@@ -51,8 +51,8 @@ const MenuScreen = ({ navigation }) => {
     return (
         <View>
             <ScrollView>
-                <Header />
-                <DefaultList />
+                <Header showBackAction />
+                <DefaultList style={style.container} items={items} />
             </ScrollView>
         </View>
     )
