@@ -2,10 +2,6 @@ import React from 'react'
 import { Image, View } from 'react-native'
 import { Button, TextInput } from 'react-native-paper'
 import Header from '../../components/MaterialHeader'
-<<<<<<< HEAD
-import BottomTab from '../../routes/BottomTabAppNavigator'
-=======
->>>>>>> babi/navigation
 import style from './style'
 
 const LoginScreen = ({ navigation }) => {
@@ -37,10 +33,6 @@ const LoginScreen = ({ navigation }) => {
                     Cadastrar
                 </Button>
             </View>
-<<<<<<< HEAD
-            <BottomTab />
-=======
->>>>>>> babi/navigation
         </View>
     )
 }
