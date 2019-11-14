@@ -45,9 +45,16 @@ export async function getIndividualStep(id, rkey) {
     return data
 }
 
+export async function getSavedRecipes(id) {
+    const link = 'listSavedRecipe/'+id
+    const data = await getData(host, link)
+    return data
+}
+
+
+
 export async function getIngredients() {}
 export async function getIngredientsFromRecipe(recipe) {}
-
 export async function postUser(user) {}
 export async function postRecipe(recipe) {}
 export async function postCategory(category) {}
