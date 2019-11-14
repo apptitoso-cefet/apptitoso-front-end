@@ -27,7 +27,11 @@ Esperamos ter ajudado. Caso queira, você também pode criar suas receitas aqui!
 const HelpScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
-            <Header subtitle='Ajuda' showBackAction />
+            <Header
+                subtitle='Ajuda'
+                showBackAction
+                onPress={navigation.goBack}
+            />
             <ImageAboutField
                 style={style.logoContainer}
                 source={require('../../assets/cooking.png')}

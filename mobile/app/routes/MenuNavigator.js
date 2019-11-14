@@ -12,7 +12,10 @@ const MenuStack = createStackNavigator(
     {
         Menu: MenuScreen,
         About: AboutScreen,
-        CulinaryConceptNav: CulinaryConceptNavigator,
+        CulinaryConceptNav: {
+            screen: CulinaryConceptNavigator,
+            navigationOptions: { header: null },
+        },
         Help: HelpScreen,
         Perfil: PerfilScreen,
         PostedRecipes: PostedRecipesScreen,

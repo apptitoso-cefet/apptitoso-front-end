@@ -52,7 +52,7 @@ const CulinaryConceptsListScreen = ({ navigation }) => {
 
     return (
         <View style={style.container}>
-            <Header />
+            <Header onPress={navigation.goBack} />
             <DefaultList
                 style={{ flex: 1 }}
                 items={listData}

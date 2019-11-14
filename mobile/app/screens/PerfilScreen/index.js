@@ -10,7 +10,7 @@ import BottomTab from '../../routes/BottomTabAppNavigator'
 const PerfilScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
-            <Header />
+            <Header showBackAction onPress={navigation.goBack} />
             <PerfilPhotoContainer />
             <View style={style.containerField}>
                 <InfoField textName='Nome' />

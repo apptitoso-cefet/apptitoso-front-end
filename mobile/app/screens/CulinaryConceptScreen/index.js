@@ -10,7 +10,7 @@ const LOREM_IPSUM = `Em gastronomia denomina-se al dente ao estado de cozimento 
 const CulinaryConceptScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
-            <Header />
+            <Header showBackAction onPress={navigation.goBack} />
             <ImageAboutField
                 style={style.logoContainer}
                 source={require('../../assets/alDente.jpeg')}

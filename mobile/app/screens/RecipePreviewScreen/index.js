@@ -53,7 +53,7 @@ const RecipePreviewScreen = ({ navigation }) => {
                 }}
             />
 
-            <MaterialHeader showBackAction />
+            <MaterialHeader showBackAction onPress={navigation.goBack} />
 
             <ImageBackground
                 style={[
