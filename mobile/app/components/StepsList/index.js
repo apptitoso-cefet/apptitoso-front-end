@@ -28,7 +28,7 @@ const renderItemConst = ({ item, move, moveEnd, isActive }) => {
     )
 }
 
-const StepsList = props => {
+const StepsList = ({ navigation }) => {
     return (
         <View style={{ ...style.container, ...props.style }}>
             <DraggableFlatList

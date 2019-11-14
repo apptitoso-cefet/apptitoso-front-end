@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
 import { BottomNavigation, Text } from 'react-native-paper'
-import AboutScreen from '../screens/AboutScreen'
-import CulinaryConceptScreen from '../screens/CulinaryConceptScreen'
-import CulinaryConceptsListScreen from '../screens/CulinaryConceptsListScreen'
+import HomeScreen from '../screens/HomeScreen'
+import MenuScreen from '../screens/MenuScreen'
+import SearchResultsScreen from '../screens/SearchResultsScreen'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 
-export default MateNavigation = props => {
+export default BottomTab = props => {
     const [index, setIndex] = useState(0)
 
     const routes = [
-        { key: 'about', title: 'About', icon: 'info-outline' },
-        { key: 'concept', title: 'Concept', icon: 'chef-hat' },
-        { key: 'list', title: 'List', icon: 'bars' },
+        { key: 'home', title: 'Home', icon: 'info-outline' },
+        { key: 'search', title: 'Search', icon: 'bars' },
+        { key: 'menu', title: 'Menu', icon: 'chef-hat' },
     ]
 
     _handleIndexChange = index => {
@@ -19,9 +19,9 @@ export default MateNavigation = props => {
     }
 
     _renderScene = BottomNavigation.SceneMap({
-        about: AboutScreen,
-        concept: CulinaryConceptScreen,
-        list: CulinaryConceptsListScreen,
+        home: HomeScreen,
+        search: SearchResultsScreen,
+        menu: MenuScreen,
     })
 
     return (

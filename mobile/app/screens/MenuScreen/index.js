@@ -1,7 +1,7 @@
 import React from 'react'
 import { ScrollView, FlatList, StyleSheet } from 'react-native'
 import { Title } from 'react-native-paper'
-
+import BottomTab from '../../routes/BottomTabAppNavigator'
 import Header from '../../components/MaterialHeader'
 import DefaultList from '../../components/DefaultList'
 
@@ -16,12 +16,14 @@ const items = [
     },
 ]
 
-const Menu = props => {
+const MenuScreen = ({ navigation }) => {
     return (
-        <ScrollView>
-            <Header />
-            <DefaultList style={style.container} items={items} />
-        </ScrollView>
+        <View>
+            <ScrollView>
+                <Header />
+                <DefaultList style={style.container} items={items} />
+            </ScrollView>
+        </View>
     )
 }
 
@@ -31,4 +33,9 @@ const style = StyleSheet.create({
     },
 })
 
-export default Menu
+MenuScreen.navigationOptions = {
+    title: 'Menu',
+    header: null,
+}
+
+export default MenuScreen

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Error: Unable to resolve module `./index.android` from `C:\Users\Babi\Documents\Projects\Apptitoso\apptitoso-front-end\mobile/.`: The module `./index.android` could not be found from `C:\Users\Babi\Documents\Projects\Apptitoso\apptitoso-front-end\mobile/.`. Indeed, none of these files exist:<br> &nbsp;* `C:\Users\Babi\Documents\Projects\Apptitoso\apptitoso-front-end\mobile\index.android(.native||.android.js|.native.js|.js|.android.json|.native.json|.json|.android.ts|.native.ts|.ts|.android.tsx|.native.tsx|.tsx)`<br> &nbsp;* `C:\Users\Babi\Documents\Projects\Apptitoso\apptitoso-front-end\mobile\index.android\index(.native||.android.js|.native.js|.js|.android.json|.native.json|.json|.android.ts|.native.ts|.ts|.android.tsx|.native.tsx|.tsx)`<br> &nbsp; &nbsp;at ModuleResolver.resolveDependency (C:\Users\Babi\Documents\Projects\Apptitoso\apptitoso-front-end\mobile\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:163:15)<br> &nbsp; &nbsp;at ResolutionRequest.resolveDependency (C:\Users\Babi\Documents\Projects\Apptitoso\apptitoso-front-end\mobile\node_modules\metro\src\node-haste\DependencyGraph\ResolutionRequest.js:52:18)<br> &nbsp; &nbsp;at DependencyGraph.resolveDependency (C:\Users\Babi\Documents\Projects\Apptitoso\apptitoso-front-end\mobile\node_modules\metro\src\node-haste\DependencyGraph.js:283:16)<br> &nbsp; &nbsp;at C:\Users\Babi\Documents\Projects\Apptitoso\apptitoso-front-end\mobile\node_modules\metro\src\lib\transformHelpers.js:264:42<br> &nbsp; &nbsp;at Server.&lt;anonymous&gt; (C:\Users\Babi\Documents\Projects\Apptitoso\apptitoso-front-end\mobile\node_modules\metro\src\Server.js:1049:41)<br> &nbsp; &nbsp;at Generator.next (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at asyncGeneratorStep (C:\Users\Babi\Documents\Projects\Apptitoso\apptitoso-front-end\mobile\node_modules\metro\src\Server.js:99:24)<br> &nbsp; &nbsp;at _next (C:\Users\Babi\Documents\Projects\Apptitoso\apptitoso-front-end\mobile\node_modules\metro\src\Server.js:119:9)</pre>
+</body>
+</html>

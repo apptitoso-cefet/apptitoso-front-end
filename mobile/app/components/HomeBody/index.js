@@ -6,7 +6,7 @@ import HorizontalList from '../HorizontalList'
 const HomeBody = props => {
     const { colors } = props.theme
     return (
-        <View style={props.style}>
+        <View>
             <SectionList
                 style={{ flex: 1 }}
                 keyExtractor={(item, index) => item + index}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { View } from 'react-native'
-
+import BottomTab from '../../routes/BottomTabAppNavigator'
 import Header from '../../components/MaterialHeader'
 import { style } from './style'
 import DefaultList from '../../components/DefaultList'
@@ -48,7 +48,7 @@ const listData = [
     },
 ]
 
-const CulinaryConceptsListScreen = () => {
+const CulinaryConceptsListScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
             <Header subtitle='Conceitos Culinários' showBackAction />
@@ -57,8 +57,14 @@ const CulinaryConceptsListScreen = () => {
                 items={listData}
                 icon='chevron-right'
             />
+            <BottomTab />
         </View>
     )
+}
+
+CulinaryConceptListScreen.navigationOptions = {
+    title: 'CulinaryConceptList',
+    header: null,
 }
 
 export default CulinaryConceptsListScreen
