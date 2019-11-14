@@ -8,10 +8,10 @@ const { width } = Dimensions.get('window')
 
 export const HorizontalListCardItem = props => {
     return (
-        <TouchableHighlight>
+        <TouchableHighlight style={{ heigth: 20 }}>
             <Card
                 key={() => props.item.key.toString()}
-                style={{ width: width / 2, margin: 5, heigth: 30 }}
+                style={{ width: width / 2, margin: 5 }}
             >
                 <Card.Cover source={props.item.image} />
                 <Card.Title title={props.item.name} />
