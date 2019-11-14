@@ -10,7 +10,7 @@ const DESCR_PASSO = `descrição do passo uhul Lorem ipsum dolor sit amet,
 consectetur adipiscing elit.
 Donec facilisis leo quam.`
 
-const IndividualStepScreen = () => {
+const IndividualStepScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
             <Header showBackAction />
@@ -27,6 +27,11 @@ const IndividualStepScreen = () => {
             <EvaluationModal />
         </View>
     )
+}
+
+IndividualStepScreen.navigationOptions = {
+    title: 'IndividualStep',
+    header: null,
 }
 
 export default IndividualStepScreen

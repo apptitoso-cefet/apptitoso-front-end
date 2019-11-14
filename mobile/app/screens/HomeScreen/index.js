@@ -1,9 +1,10 @@
 import React from 'react'
 import { View } from 'react-native'
-
 import Header from '../../components/MaterialHeader'
 import HomeBody from '../../components/HomeBody'
+import BottomTab from '../../routes/BottomTabAppNavigator'
 
+<<<<<<< HEAD
 const homeData = [
     {
         title: 'aaaa',
@@ -22,6 +23,13 @@ const HomeScreen = props => {
         <View style={{ flex: 1 }}>
             <Header />
             <HomeBody style={{ flex: 1 }} data={homeData} />
+=======
+const HomeScreen = ({ navigation }) => {
+    return (
+        <View style={{ flex: 1 }}>
+            <Header />
+            <HomeBody />
+>>>>>>> master
         </View>
     )
 }

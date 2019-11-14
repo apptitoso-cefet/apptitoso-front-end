@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 
 const HomeBody = props => {
     return (
-        <View style={props.style}>
+        <View>
             <SectionList
                 style={{ flex: 1 }}
                 keyExtractor={(item, index) => item + index}
