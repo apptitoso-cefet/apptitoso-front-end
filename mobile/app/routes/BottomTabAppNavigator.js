@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { BottomNavigation } from 'react-native-paper'
 import HomeScreen from '../screens/HomeScreen'
-import MenuScreen from '../screens/MenuScreen'
-import SearchResultsScreen from '../screens/SearchResultsScreen'
-import SavedRecipesScreen from '../screens/SavedRecipesScreen'
+import MenuNavigator from './MenuNavigator'
+import SearchResultNavigator from './SearchResultNavigator'
+import SavedRecipesNavigator from './SavedRecipesNavigator'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 
 const BottomTab = props => {
@@ -22,9 +22,9 @@ const BottomTab = props => {
 
     _renderScene = BottomNavigation.SceneMap({
         home: HomeScreen,
-        search: SearchResultsScreen,
-        saved: SavedRecipesScreen,
-        menu: MenuScreen,
+        search: SearchResultNavigator,
+        saved: SavedRecipesNavigator,
+        menu: MenuNavigator,
     })
 
     return (

@@ -52,7 +52,7 @@ const MenuScreen = ({ navigation }) => {
         <View>
             <ScrollView>
                 <Header />
-                <DefaultList style={style.container} items={items} />
+                <DefaultList />
             </ScrollView>
         </View>
     )
