@@ -10,7 +10,7 @@ const SignUpScreen = ({ navigation }) => {
             <Header showBackAction />
             <Image
                 style={style.logo}
-                source={require('../../assets/logo.png')}
+                source={require('../../assets/cooking.png')}
             />
             <View style={style.inputsContainer}>
                 <TextInput style={style.input} label={'Primeiro nome'} />

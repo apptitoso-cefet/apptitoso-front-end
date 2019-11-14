@@ -30,7 +30,7 @@ const HelpScreen = ({ navigation }) => {
             <Header subtitle='Ajuda' showBackAction />
             <ImageAboutField
                 style={style.logoContainer}
-                source={require('../../assets/placeholderPhoto.jpg')}
+                source={require('../../assets/cooking.png')}
             />
             <TextScrollField
                 style={style.textContainer}
