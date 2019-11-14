@@ -19,17 +19,30 @@ export async function getData(url = host, link = '') {
 }
 
 export async function getUser(id) {}
-export async function getCulinaryConcept(id) {}
+
+export async function getCulinaryConcept(id) {
+    const link = 'fullCulinaryConcept/'+id
+    const data = await getData(host, link)
+    return data
+}
+
 export async function getCulinaryConceptList() {
     const link = 'listCulinaryConcept'
     const data = await getData(host, link)
     return data
 }
 
-export async function getRecipeList() {}
+export async function getFullRecipe() {}
 
-export async function getRecipe(id) {}
+export async function getRecipe(id) {
+    const link = 'listFullRecipe/'+id
+    const data = await getData(host, link)
+    return data
+}
+
 export async function getStepsFromRecipe(recipe) {}
+//teoricamente n precisa pq o get recipe ja vem tudo 
+
 export async function getCategory(id) {}
 export async function getIngredients() {}
 export async function getIngredientsFromRecipe(recipe) {}
