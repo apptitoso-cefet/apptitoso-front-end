@@ -14,7 +14,7 @@ const IndividualStepScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
             <Header showBackAction />
-            <Title style={style.title}>Nome passo lala lala lala</Title>
+            <Title style={style.title}>Separe o ovo em clara e gema</Title>
             <TextScrollField style={style.text} content={DESCR_PASSO} />
             <View style={style.buttonsContainer}>
                 <Button mode='contained' style={style.button}>
