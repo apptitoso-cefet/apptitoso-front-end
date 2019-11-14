@@ -18,7 +18,11 @@ export async function getData(url = host, link = '') {
     return retorno
 }
 
-export async function getUser(id) {}
+export async function getUser(id) {
+    const link = 'perfil/'+id
+    const data = await getData(host,link)
+    return data
+}
 
 export async function getCulinaryConcept(id) {
     const link = 'fullCulinaryConcept/'+id
