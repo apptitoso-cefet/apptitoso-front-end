@@ -21,7 +21,6 @@ const HomeBody = props => {
                 }}
                 SectionSeparatorComponent={() => <Divider />}
                 renderItem={({ section: { data } }) => {
-                    console.table(data)
                     return <HorizontalList data={data[0]} />
                 }}
                 sections={props.data}
@@ -31,7 +30,6 @@ const HomeBody = props => {
 }
 HomeBody.propTypes = {
     style: ViewPropTypes,
-    data: PropTypes.object,
 }
 
 export default HomeBody

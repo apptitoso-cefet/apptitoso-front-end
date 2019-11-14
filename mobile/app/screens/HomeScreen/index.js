@@ -1,8 +1,8 @@
-import React from 'react'
-import { View } from 'react-native'
+import React, { useEffect, useState } from 'react'
+import { View, Text } from 'react-native'
 import Header from '../../components/MaterialHeader'
 import HomeBody from '../../components/HomeBody'
-import BottomTab from '../../routes/BottomTabAppNavigator'
+import { getCulinaryConceptList } from '../../util/api'
 
 const homeData = [
     {
