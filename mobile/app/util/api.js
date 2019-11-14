@@ -1,3 +1,8 @@
+import { Recipe } from './models'
+import { keyToTestName } from 'jest-snapshot/build/utils'
+
+const host = 'localhost'
+
 export async function postData(url = '', data = {}) {
     const response = fetch(url, {
         method: 'POST',
@@ -7,8 +12,8 @@ export async function postData(url = '', data = {}) {
     return await response.json()
 }
 
-export async function getData(url = '') {
-    const response = await fetch(`${url}`)
+export async function getData(url = host, link = '') {
+    const response = await fetch(`${url}/${link}`)
     const retorno = await response.json()
     return retorno
 }
@@ -16,6 +21,30 @@ export async function getData(url = '') {
 async function getUser(id) {}
 async function getCulinaryConcept(id) {}
 async function getCulinaryConceptList() {}
+
+async function getRecipeList() {
+    const link = 'listRecipe'
+    const data = await getData(host, link)
+    const recipies = data.arrReceitas.map(recipe => {
+        const {
+            key,
+            name,
+            picture,
+            authorKey,
+            recipeAuthorName: authorName,
+        } = receita
+        return new Recipe(
+            name,
+            null,
+            picture,
+            { authorKey, authorName },
+            [],
+            key
+        )
+    })
+    return recipies
+}
+
 async function getRecipe(id) {}
 async function getStepsFromRecipe(recipe) {}
 async function getCategory(id) {}
