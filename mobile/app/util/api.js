@@ -32,7 +32,6 @@ export async function getCulinaryConceptList() {
     return data
 }
 
-export async function getFullRecipe() {}
 
 export async function getRecipe(id) {
     const link = 'listFullRecipe/'+id
