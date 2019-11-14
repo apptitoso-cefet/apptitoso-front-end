@@ -70,8 +70,4 @@ const SearchResult = props => {
     )
 }
 
-RecipeDetailField.propTypes = {
-    searchText: PropTypes.string.isRequired,
-}
-
 export default SearchResult

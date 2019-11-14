@@ -32,19 +32,19 @@ const homeData = [
         data: [
             [
                 {
+                    key: 8,
+                    name: 'Saladinha light',
+                    image: require('../../assets/salada.jpg'),
+                },
+                {
                     key: 4,
                     name: 'Arroz e feijão',
-                    image: require('../../assets/placeholderPhoto.jpg'),
+                    image: require('../../assets/recipePlaceholder.png'),
                 },
                 {
                     key: 6,
                     name: 'Macarronada',
-                    image: require('../../assets/placeholderPhoto.jpg'),
-                },
-                {
-                    key: 8,
-                    name: 'Saladinha light',
-                    image: require('../../assets/placeholderPhoto.jpg'),
+                    image: require('../../assets/recipePlaceholder.png'),
                 },
             ],
         ],
