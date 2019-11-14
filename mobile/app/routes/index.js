@@ -1,11 +1,9 @@
 import React from 'react'
-import LoginScreen from '../screens/LoginScreen'
-import SignUpScreen from '../screens/SignUpScreen'
 import { createStackNavigator, createAppContainer } from 'react-navigation'
+import BottomTabAppNavigator from './BottomTabAppNavigator'
 
-const LoginStack = createStackNavigator({
-    Login: LoginScreen,
-    SignUp: SignUpScreen,
+const BottomTabStack = createStackNavigator({
+    BottomTab: BottomTabAppNavigator,
 })
 
-export default App = createAppContainer(LoginStack)
+export default App = createAppContainer(BottomTabStack)
