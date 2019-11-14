@@ -1,6 +1,5 @@
 import React from 'react'
 import { View } from 'react-native'
-
 import Header from '../../components/MaterialHeader'
 import ImageAboutField from '../../components/ImageAboutField'
 import TextScrollField from '../../components/TextScrollField'
@@ -25,7 +24,7 @@ Sed sit amet semper risus. Aenean a dui ac mauris ultricies interdum.
 Integer scelerisque ipsum id laoreet tempus.
 Ut lacus diam, vehicula vitae eros ut, feugiat finibus nunc`
 
-const About = () => {
+const About = ({ navigation }) => {
     return (
         <View style={style.container}>
             <Header subtitle='Sobre' showBackAction />
@@ -39,6 +38,11 @@ const About = () => {
             />
         </View>
     )
+}
+
+AboutScreen.navigationOptions = {
+    title: 'About',
+    header: null,
 }
 
 export default About

@@ -2,8 +2,10 @@ import React from 'react'
 import { View } from 'react-native'
 import MaterialHeader from '../../components/MaterialHeader'
 import PostedRecipesList from '../../components/PostedRecipesList'
+import BottomTab from '../../routes/BottomTabAppNavigator'
 import style from './style'
 
+<<<<<<< HEAD
 const listData = [
     {
         key: 'a',
@@ -52,8 +54,21 @@ const PostedRecipesScreen = props => {
         <View style={style.container}>
             <MaterialHeader style={style.header} />
             <PostedRecipesList style={style.result} data={listData} />
+=======
+const PostedRecipesScreen = ({ navigation }) => {
+    return (
+        <View style={style.container}>
+            <MaterialHeader style={style.header} />
+            <PostedRecipesList style={style.result} />
+            <BottomTab />
+>>>>>>> babi/navigation
         </View>
     )
+}
+
+PostedRecipesScreen.navigationOptions = {
+    title: 'PostedRecipes',
+    header: null,
 }
 
 export default PostedRecipesScreen
