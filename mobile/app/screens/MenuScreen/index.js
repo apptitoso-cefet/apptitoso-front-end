@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, FlatList, StyleSheet } from 'react-native'
+import { ScrollView, FlatList, StyleSheet, View } from 'react-native'
 import { Title } from 'react-native-paper'
 import BottomTab from '../../routes/BottomTabAppNavigator'
 import Header from '../../components/MaterialHeader'

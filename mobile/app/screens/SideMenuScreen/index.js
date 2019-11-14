@@ -2,7 +2,6 @@ import React from 'react'
 import { View, Text } from 'react-native'
 import MenuItem from '../../components/MenuItem'
 import Header from '../../components/MaterialHeader'
-import BottomTab from '../../routes/BottomTabAppNavigator'
 
 import style from './style'
 
@@ -20,7 +19,6 @@ const SideMenuScreen = ({ navigation }) => {
                 <MenuItem textName='Conceitos Culinários' />
                 <MenuItem textName='Login/Logout' />
             </View>
-            <BottomTab />
         </View>
     )
 }

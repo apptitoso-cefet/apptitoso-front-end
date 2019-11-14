@@ -2,7 +2,6 @@ import React from 'react'
 import { Image, View } from 'react-native'
 import { Button, TextInput, Appbar } from 'react-native-paper'
 import Header from '../../components/MaterialHeader'
-import BottomTab from '../../routes/BottomTabAppNavigator'
 import style from './style'
 
 const SignUpScreen = ({ navigation }) => {
@@ -29,7 +28,6 @@ const SignUpScreen = ({ navigation }) => {
                     Entrar
                 </Button>
             </View>
-            <BottomTab style={{ flex: 1 }} />
         </View>
     )
 }

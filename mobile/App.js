@@ -1,6 +1,6 @@
 import React from 'react'
 import { Provider as PaperProvider } from 'react-native-paper'
-import LoginScreen from './app/screens/LoginScreen'
+import LoginScreen from './app/routes/BottomTabAppNavigator'
 
 function App() {
     return (

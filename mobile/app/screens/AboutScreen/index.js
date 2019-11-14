@@ -1,6 +1,5 @@
 import React from 'react'
 import { View } from 'react-native'
-import BottomTab from '../../routes/BottomTabAppNavigator'
 import Header from '../../components/MaterialHeader'
 import ImageAboutField from '../../components/ImageAboutField'
 import TextScrollField from '../../components/TextScrollField'
@@ -37,7 +36,6 @@ const About = ({ navigation }) => {
                 style={style.textContainer}
                 content={LOREM_IPSUM}
             />
-            <BottomTab />
         </View>
     )
 }

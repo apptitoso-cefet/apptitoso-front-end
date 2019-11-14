@@ -1,6 +1,5 @@
 import React from 'react'
 import { View } from 'react-native'
-import BottomTab from '../../routes/BottomTabAppNavigator'
 import Header from '../../components/MaterialHeader'
 import { style } from './style'
 import DefaultList from '../../components/DefaultList'

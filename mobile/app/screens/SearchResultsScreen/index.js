@@ -3,7 +3,6 @@ import { View } from 'react-native'
 import Header from '../../components/MaterialHeader'
 import SearchField from '../../components/SearchField'
 import SearchResult from '../../components/SearchResult'
-import BottomTab from '../../routes/BottomTabAppNavigator'
 import style from './style'
 
 const SearchResultsScreen = ({ navigation }) => {
