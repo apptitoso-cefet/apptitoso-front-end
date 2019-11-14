@@ -3,30 +3,44 @@ import { ScrollView, StyleSheet, View } from 'react-native'
 import Header from '../../components/MaterialHeader'
 import DefaultList from '../../components/DefaultList'
 
-const items = [
-    {
-        key: '1',
-        name: 'Perfil',
-    },
-    {
-        key: '2',
-        name: 'Receitas postadas',
-    },
-    {
-        key: '3',
-        name: 'Ajuda',
-    },
-    {
-        key: '4',
-        name: 'Sobre',
-    },
-    {
-        key: '5',
-        name: 'Conceitos culinários',
-    },
-]
-
 const MenuScreen = ({ navigation }) => {
+    const items = [
+        {
+            key: '1',
+            name: 'Perfil',
+            onPress: () => {
+                navigation.navigate('Perfil')
+            },
+        },
+        {
+            key: '2',
+            name: 'Receitas postadas',
+            onPress: () => {
+                navigation.navigate('PostedRecipes')
+            },
+        },
+        {
+            key: '3',
+            name: 'Ajuda',
+            onPress: () => {
+                navigation.navigate('Help')
+            },
+        },
+        {
+            key: '4',
+            name: 'Sobre',
+            onPress: () => {
+                navigation.navigate('About')
+            },
+        },
+        {
+            key: '5',
+            name: 'Conceitos culinários',
+            onPress: () => {
+                navigation.navigate('CulinaryConceptsList')
+            },
+        },
+    ]
     return (
         <View>
             <ScrollView>

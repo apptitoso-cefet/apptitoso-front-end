@@ -62,7 +62,7 @@ const CulinaryConceptsListScreen = ({ navigation }) => {
 }
 
 CulinaryConceptListScreen.navigationOptions = {
-    title: 'CulinaryConceptList',
+    title: 'CulinaryConceptsList',
     header: null,
 }
 
