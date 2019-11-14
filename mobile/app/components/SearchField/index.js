@@ -11,10 +11,10 @@ const SearchField = props => {
             <Searchbar
                 style={{ ...style.searchbar }}
                 placeholder={SEARCH_PLACEHOLDER}
+                onChangeText={props.onChangeText}
             />
         </View>
     )
 }
-
 
 export default SearchField

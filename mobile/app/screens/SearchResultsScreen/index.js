@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View } from 'react-native'
 import Header from '../../components/MaterialHeader'
 import SearchField from '../../components/SearchField'

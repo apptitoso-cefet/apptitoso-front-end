@@ -50,7 +50,9 @@ const listData = [
 ]
 
 const SearchResult = props => {
-    const query = listData.filter(item => item.name.include(searchText))
+    const query = listData.filter(item => {
+        return item.name.toLowerCase().includes(props.searchText.toLowerCase())
+    })
     return (
         <View style={{ ...style.container, ...props.style }}>
             <FlatList
@@ -68,10 +70,6 @@ const SearchResult = props => {
             />
         </View>
     )
-}
-
-RecipeDetailField.propTypes = {
-    searchText: PropTypes.string.isRequired,
 }
 
 export default SearchResult
