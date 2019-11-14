@@ -11,10 +11,10 @@ O foco do aplicativo é auxiliar jovens a aprender a cozinhar.`
 const AboutScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
-            <Header subtitle='Sobre' showBackAction />
+            <Header subtitle='Sobre' />
             <ImageAboutField
                 style={style.logoContainer}
-                source={require('../../assets/placeholderPhoto.jpg')}
+                source={require('../../assets/cooking.png')}
             />
             <TextScrollField
                 style={style.textContainer}

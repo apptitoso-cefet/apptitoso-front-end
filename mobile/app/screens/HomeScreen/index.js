@@ -6,7 +6,7 @@ import { getCulinaryConceptList } from '../../util/api'
 
 const homeData = [
     {
-        title: 'Mineiro',
+        title: 'Comida mineira',
         data: [
             [
                 { key: 5, name: 'Bão de queijo' },
@@ -16,7 +16,7 @@ const homeData = [
         ],
     },
     {
-        title: 'Simples',
+        title: 'Simples de fazer',
         data: [
             [
                 { key: 4, name: 'Arroz e feijão' },
@@ -27,7 +27,7 @@ const homeData = [
     },
 ]
 
-const HomeScreen = props => {
+const HomeScreen = ({ navigation }) => {
     return (
         <View style={{ flex: 1 }}>
             <Header />

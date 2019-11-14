@@ -18,7 +18,6 @@ const PerfilScreen = ({ navigation }) => {
                 <InfoField textName='Excluir conta' />
                 <LogoutField />
             </View>
-            <BottomTab />
         </View>
     )
 }
