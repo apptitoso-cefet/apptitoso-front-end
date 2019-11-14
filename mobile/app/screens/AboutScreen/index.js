@@ -5,24 +5,8 @@ import ImageAboutField from '../../components/ImageAboutField'
 import TextScrollField from '../../components/TextScrollField'
 import { style } from './style'
 
-const LOREM_IPSUM = `Lorem ipsum dolor sit amet,
-consectetur adipiscing elit.
-Donec facilisis leo quam.
-Phasellus eget nisi pretium, tincidunt magna gravida, ultrices est.
-Morbi nec massa odio. Integer posuere purus et dictum euismod.
-Integer pulvinar purus nec commodo accumsan.
-Sed sit amet semper risus. Aenean a dui ac mauris ultricies interdum.
-Integer scelerisque ipsum id laoreet tempus.
-Ut lacus diam, vehicula vitae eros ut, feugiat finibus nunc
-Lorem ipsum dolor sit amet,
-consectetur adipiscing elit.
-Donec facilisis leo quam.
-Phasellus eget nisi pretium, tincidunt magna gravida, ultrices est.
-Morbi nec massa odio. Integer posuere purus et dictum euismod.
-Integer pulvinar purus nec commodo accumsan.
-Sed sit amet semper risus. Aenean a dui ac mauris ultricies interdum.
-Integer scelerisque ipsum id laoreet tempus.
-Ut lacus diam, vehicula vitae eros ut, feugiat finibus nunc`
+const LOREM_IPSUM = `Apptitoso é um aplicativo de receitas, feito por alunos do curso tecnico em informática, no ano de 2019. Desenvolver um aplicativo de fácil usabilidade que, ao executar uma receita, consiga informar os passos por meio de narração e apresente ao usuário conceitos importantes para a culinária.
+O foco do aplicativo é auxiliar jovens a aprender a cozinhar.`
 
 const About = ({ navigation }) => {
     return (
