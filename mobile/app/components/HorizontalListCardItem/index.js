@@ -11,7 +11,7 @@ export const HorizontalListCardItem = props => {
         <TouchableHighlight>
             <Card
                 key={() => props.item.key.toString()}
-                style={{ width: width / 2, margin: 5 }}
+                style={{ width: width / 2, margin: 5, heigth: 30 }}
             >
                 <Card.Cover source={props.item.image} />
                 <Card.Title title={props.item.name} />
