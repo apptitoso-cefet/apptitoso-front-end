@@ -1,7 +1,5 @@
 import React from 'react'
-import { ScrollView, FlatList, StyleSheet, View } from 'react-native'
-import { Title } from 'react-native-paper'
-import BottomTab from '../../routes/BottomTabAppNavigator'
+import { ScrollView, StyleSheet, View } from 'react-native'
 import Header from '../../components/MaterialHeader'
 import DefaultList from '../../components/DefaultList'
 
@@ -12,7 +10,19 @@ const items = [
     },
     {
         key: '2',
-        name: 'Minhas Receitas',
+        name: 'Receitas postadas',
+    },
+    {
+        key: '3',
+        name: 'Ajuda',
+    },
+    {
+        key: '4',
+        name: 'Sobre',
+    },
+    {
+        key: '5',
+        name: 'Conceitos culinários',
     },
 ]
 
