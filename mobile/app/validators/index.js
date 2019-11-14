@@ -5,6 +5,7 @@ export const itemPropType = PropTypes.shape({
     key: PropTypes.any.isRequired,
     name: PropTypes.string.isRequired,
     imgSrc: ImageSourcePropType,
+    onPress: PropTypes.func,
 })
 
 export const recipePropType = PropTypes.shape({
