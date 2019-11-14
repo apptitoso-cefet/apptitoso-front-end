@@ -54,6 +54,33 @@ const homeData = [
             ],
         ],
     },
+    {
+        title: 'Fitness',
+        data: [
+            [
+                {
+                    key: 11,
+                    name: 'Coxinha fit',
+                    image: require('../../assets/salada.jpg'),
+                },
+                {
+                    key: 12,
+                    name: 'Pão de queijo low carb',
+                    image: require('../../assets/arroz.jpg'),
+                },
+                {
+                    key: 13,
+                    name: 'Tropeiro low carb',
+                    image: require('../../assets/macarrao.jpg'),
+                },
+                {
+                    key: 8,
+                    name: 'Saladinha light',
+                    image: require('../../assets/salada.jpg'),
+                },
+            ],
+        ],
+    },
 ]
 
 const HomeScreen = ({ navigation }) => {

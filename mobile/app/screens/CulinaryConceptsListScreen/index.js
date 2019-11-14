@@ -52,6 +52,7 @@ const CulinaryConceptsListScreen = ({ navigation }) => {
 
     return (
         <View style={style.container}>
+            <Header />
             <DefaultList
                 style={{ flex: 1 }}
                 items={listData}
@@ -64,6 +65,7 @@ const CulinaryConceptsListScreen = ({ navigation }) => {
 CulinaryConceptsListScreen.navigationOptions = {
     title: 'CulinaryConceptsList',
     header: null,
+    headerShown: false,
 }
 
 export default CulinaryConceptsListScreen

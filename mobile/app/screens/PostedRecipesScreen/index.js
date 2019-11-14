@@ -51,7 +51,11 @@ const listData = [
 const PostedRecipesScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
-            <MaterialHeader style={style.header} />
+            <MaterialHeader
+                style={style.header}
+                showBackAction
+                onPress={() => navigation.goBack()}
+            />
             <PostedRecipesList style={style.result} data={listData} />
         </View>
     )
