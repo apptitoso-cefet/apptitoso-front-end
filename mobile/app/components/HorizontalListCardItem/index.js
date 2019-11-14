@@ -13,9 +13,7 @@ export const HorizontalListCardItem = props => {
                 key={() => props.item.key.toString()}
                 style={{ width: width / 2, margin: 5 }}
             >
-                <Card.Cover
-                    source={require('../../assets/placeholderPhoto.jpg')}
-                />
+                <Card.Cover source={props.item.image} />
                 <Card.Title title={props.item.name} />
             </Card>
         </TouchableHighlight>

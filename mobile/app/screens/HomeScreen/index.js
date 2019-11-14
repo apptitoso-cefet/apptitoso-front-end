@@ -9,9 +9,21 @@ const homeData = [
         title: 'Comida mineira',
         data: [
             [
-                { key: 5, name: 'Bão de queijo' },
-                { key: 9, name: 'Queijo com goiabada' },
-                { key: 7, name: 'Tropeiro' },
+                {
+                    key: 5,
+                    name: 'Bão de queijo',
+                    image: require('../../assets/queijo.jpg'),
+                },
+                {
+                    key: 9,
+                    name: 'Queijo com goiabada',
+                    image: require('../../assets/goiaba.jpg'),
+                },
+                {
+                    key: 7,
+                    name: 'Tropeiro',
+                    image: require('../../assets/tropeiro.jpg'),
+                },
             ],
         ],
     },
@@ -19,9 +31,21 @@ const homeData = [
         title: 'Simples de fazer',
         data: [
             [
-                { key: 4, name: 'Arroz e feijão' },
-                { key: 6, name: 'Macarronada' },
-                { key: 8, name: 'Saladinha light' },
+                {
+                    key: 4,
+                    name: 'Arroz e feijão',
+                    image: require('../../assets/placeholderPhoto.jpg'),
+                },
+                {
+                    key: 6,
+                    name: 'Macarronada',
+                    image: require('../../assets/placeholderPhoto.jpg'),
+                },
+                {
+                    key: 8,
+                    name: 'Saladinha light',
+                    image: require('../../assets/placeholderPhoto.jpg'),
+                },
             ],
         ],
     },
