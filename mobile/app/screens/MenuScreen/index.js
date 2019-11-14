@@ -9,7 +9,7 @@ const MenuScreen = ({ navigation }) => {
             key: '1',
             name: 'Perfil',
             onPress: () => {
-                navigation.navigate('Perfil')
+                navigation.navigate('Login')
             },
         },
         {
