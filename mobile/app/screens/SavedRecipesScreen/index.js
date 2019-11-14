@@ -8,42 +8,42 @@ const listData = [
     {
         key: 'a',
         name: 'Bolo de Cenouras',
-        imageSrc: require('../../assets/placeholderPhoto.jpg'),
+        imageSrc: require('../../assets/bolo.jpg'),
     },
     {
         key: 'b',
         name: 'Bom de Queijo',
-        imageSrc: require('../../assets/placeholderPhoto.jpg'),
+        imageSrc: require('../../assets/queijo.jpg'),
     },
     {
         key: 'c',
         name: 'Frutas Cristalizadas',
-        imageSrc: require('../../assets/placeholderPhoto.jpg'),
+        imageSrc: require('../../assets/frutinha.jpg'),
     },
     {
         key: 'd',
-        name: 'Gelo',
-        imageSrc: require('../../assets/placeholderPhoto.jpg'),
+        name: 'Sopa',
+        imageSrc: require('../../assets/aleatoria1.jpg'),
     },
     {
         key: 'e',
         name: 'Bolo Decorativo',
-        imageSrc: require('../../assets/placeholderPhoto.jpg'),
+        imageSrc: require('../../assets/bolin.jpg'),
     },
     {
         key: 'f',
         name: 'Suco Funcional de Abacaxi',
-        imageSrc: require('../../assets/placeholderPhoto.jpg'),
+        imageSrc: require('../../assets/suco.jpg'),
     },
     {
         key: 'g',
-        name: 'Água Gelada',
-        imageSrc: require('../../assets/placeholderPhoto.jpg'),
+        name: 'Caldo',
+        imageSrc: require('../../assets/aleatoria2.jpg'),
     },
     {
         key: 'h',
         name: 'Bolo Verde',
-        imageSrc: require('../../assets/placeholderPhoto.jpg'),
+        imageSrc: require('../../assets/boloverde.jpg'),
     },
 ]
 
