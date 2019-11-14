@@ -3,13 +3,14 @@ import { View } from 'react-native'
 import { Button, Title } from 'react-native-paper'
 import Header from '../../components/MaterialHeader'
 import TextScrollField from '../../components/TextScrollField'
+import EvaluationModal from '../../components/EvaluationModal'
 import { style } from './style'
 
 const DESCR_PASSO = `descrição do passo uhul Lorem ipsum dolor sit amet,
 consectetur adipiscing elit.
 Donec facilisis leo quam.`
 
-const IndividualStepScreen = () => {
+const IndividualStepScreen = ({ navigation }) => {
     return (
         <View style={style.container}>
             <Header showBackAction />
@@ -23,8 +24,14 @@ const IndividualStepScreen = () => {
                     Próximo
                 </Button>
             </View>
+            <EvaluationModal />
         </View>
     )
+}
+
+IndividualStepScreen.navigationOptions = {
+    title: 'IndividualStep',
+    header: null,
 }
 
 export default IndividualStepScreen

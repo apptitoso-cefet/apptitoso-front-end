@@ -18,7 +18,7 @@ const style = StyleSheet.create({
         backgroundColor: 'white',
     },
     inputsContainer: {
-        flex: 8,
+        flex: 10,
         flexDirection: 'column',
         justifyContent: 'center',
         backgroundColor: '#6200ee',
@@ -27,7 +27,7 @@ const style = StyleSheet.create({
         backgroundColor: 'white',
         alignSelf: 'center',
         width: 320,
-        height: 40,
+        height: 35,
         margin: 5,
     },
     text: {

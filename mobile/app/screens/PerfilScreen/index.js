@@ -5,8 +5,9 @@ import Header from '../../components/MaterialHeader'
 import InfoField from '../../components/InfoField'
 import LogoutField from '../../components/LogoutField'
 import PerfilPhotoContainer from '../../components/PerfilPhotoContainer'
+import BottomTab from '../../routes/BottomTabAppNavigator'
 
-export default function() {
+const PerfilScren = ({ navigation }) => {
     return (
         <View style={style.container}>
             <Header />
@@ -17,6 +18,14 @@ export default function() {
                 <InfoField textName='Excluir conta' />
                 <LogoutField />
             </View>
+            <BottomTab />
         </View>
     )
 }
+
+PerfilScreen.navigationOptions = {
+    title: 'Perfil',
+    header: null,
+}
+
+export default PerfilScren

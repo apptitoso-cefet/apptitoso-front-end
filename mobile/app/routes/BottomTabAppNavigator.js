@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
-import { BottomNavigation, Text } from 'react-native-paper'
+import { BottomNavigation } from 'react-native-paper'
+import HomeScreen from '../screens/HomeScreen'
+import MenuScreen from '../screens/MenuScreen'
 import SearchResultsScreen from '../screens/SearchResultsScreen'
-import CulinaryConceptScreen from '../screens/CulinaryConceptScreen'
-import CulinaryConceptsListScreen from '../screens/CulinaryConceptsListScreen'
+import SavedRecipesScreen from '../screens/SavedRecipesScreen'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 
-export default MateNavigation = props => {
+const BottomTab = props => {
     const [index, setIndex] = useState(0)
 
     const routes = [
-        { key: 'search', title: 'Search', icon: 'loupe' },
-        { key: 'concept', title: 'Concept', icon: 'chef-hat' },
-        { key: 'list', title: 'List', icon: 'bars' },
+        { key: 'home', title: 'Home', icon: 'info-outline' },
+        { key: 'search', title: 'Search', icon: 'bars' },
+        { key: 'saved', title: 'Saved', icon: 'info-outline' },
+        { key: 'menu', title: 'Menu', icon: 'chef-hat' },
     ]
 
     _handleIndexChange = index => {
@@ -19,9 +21,10 @@ export default MateNavigation = props => {
     }
 
     _renderScene = BottomNavigation.SceneMap({
+        home: HomeScreen,
         search: SearchResultsScreen,
-        concept: CulinaryConceptScreen,
-        list: CulinaryConceptsListScreen,
+        saved: SavedRecipesScreen,
+        menu: MenuScreen,
     })
 
     return (
@@ -32,3 +35,5 @@ export default MateNavigation = props => {
         />
     )
 }
+
+export default BottomTab

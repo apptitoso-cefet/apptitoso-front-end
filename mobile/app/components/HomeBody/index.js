@@ -2,11 +2,11 @@ import React from 'react'
 import { View, SectionList, ViewPropTypes } from 'react-native'
 import { List, Divider, Text, withTheme } from 'react-native-paper'
 import HorizontalList from '../HorizontalList'
+import PropTypes from 'prop-types'
 
 const HomeBody = props => {
-    const { colors } = props.theme
     return (
-        <View style={props.style}>
+        <View>
             <SectionList
                 style={{ flex: 1 }}
                 keyExtractor={(item, index) => item + index}
@@ -21,21 +21,9 @@ const HomeBody = props => {
                 }}
                 SectionSeparatorComponent={() => <Divider />}
                 renderItem={({ section: { data } }) => {
-                    console.table(data)
                     return <HorizontalList data={data[0]} />
                 }}
-                sections={[
-                    {
-                        title: 'aaaa',
-                        data: [
-                            [
-                                { key: 5, name: 'bla ' },
-                                { key: 9, name: 'ble ' },
-                                { key: 7, name: 'bli ' },
-                            ],
-                        ],
-                    },
-                ]}
+                sections={props.data}
             />
         </View>
     )
@@ -44,4 +32,4 @@ HomeBody.propTypes = {
     style: ViewPropTypes,
 }
 
-export default withTheme(HomeBody)
+export default HomeBody

@@ -1,7 +1,6 @@
 import { Recipe } from './models'
-import { keyToTestName } from 'jest-snapshot/build/utils'
 
-const host = 'localhost'
+const host = 'http://127.0.0.1:8000'
 
 export async function postData(url = '', data = {}) {
     const response = fetch(url, {
@@ -14,44 +13,28 @@ export async function postData(url = '', data = {}) {
 
 export async function getData(url = host, link = '') {
     const response = await fetch(`${url}/${link}`)
+    console.log(response, response)
     const retorno = await response.json()
     return retorno
 }
 
-async function getUser(id) {}
-async function getCulinaryConcept(id) {}
-async function getCulinaryConceptList() {}
-
-async function getRecipeList() {
-    const link = 'listRecipe'
+export async function getUser(id) {}
+export async function getCulinaryConcept(id) {}
+export async function getCulinaryConceptList() {
+    const link = 'listCulinaryConcept'
     const data = await getData(host, link)
-    const recipies = data.arrReceitas.map(recipe => {
-        const {
-            key,
-            name,
-            picture,
-            authorKey,
-            recipeAuthorName: authorName,
-        } = receita
-        return new Recipe(
-            name,
-            null,
-            picture,
-            { authorKey, authorName },
-            [],
-            key
-        )
-    })
-    return recipies
+    return data
 }
 
-async function getRecipe(id) {}
-async function getStepsFromRecipe(recipe) {}
-async function getCategory(id) {}
-async function getIngredients() {}
-async function getIngredientsFromRecipe(recipe) {}
+export async function getRecipeList() {}
 
-async function postUser(user) {}
-async function postRecipe(recipe) {}
-async function postCategory(category) {}
-async function postIngredient(ingredient) {}
+export async function getRecipe(id) {}
+export async function getStepsFromRecipe(recipe) {}
+export async function getCategory(id) {}
+export async function getIngredients() {}
+export async function getIngredientsFromRecipe(recipe) {}
+
+export async function postUser(user) {}
+export async function postRecipe(recipe) {}
+export async function postCategory(category) {}
+export async function postIngredient(ingredient) {}
