@@ -35,6 +35,13 @@ const MenuScreen = ({ navigation }) => {
         },
         {
             key: '5',
+            name: 'Ajuda',
+            onPress: () => {
+                navigation.navigate('Help')
+            },
+        },
+        {
+            key: '6',
             name: 'Sobre',
             onPress: () => {
                 navigation.navigate('About')
