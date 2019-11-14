@@ -39,10 +39,12 @@ export async function getRecipe(id) {
     return data
 }
 
-export async function getStepsFromRecipe(recipe) {}
-//teoricamente n precisa pq o get recipe ja vem tudo 
+export async function getIndividualStep(id, rkey) {
+    const link = 'individualStep/'+id+'/'+key
+    const data = await getData(host, link)
+    return data
+}
 
-export async function getCategory(id) {}
 export async function getIngredients() {}
 export async function getIngredientsFromRecipe(recipe) {}
 
