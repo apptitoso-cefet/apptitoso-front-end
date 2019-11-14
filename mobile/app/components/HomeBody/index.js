@@ -29,7 +29,6 @@ const HomeBody = props => {
 }
 HomeBody.propTypes = {
     style: ViewPropTypes,
-    data: PropTypes.object,
 }
 
 export default HomeBody
