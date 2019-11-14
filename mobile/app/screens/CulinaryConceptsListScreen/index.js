@@ -7,42 +7,42 @@ import DefaultList from '../../components/DefaultList'
 const listData = [
     {
         key: 'a',
-        name: 'Bolo de Cenouras',
+        name: 'Al dente',
         imageSrc: require('../../assets/placeholderPhoto.jpg'),
     },
     {
         key: 'b',
-        name: 'Bom de Queijo',
+        name: 'Banho Maria',
         imageSrc: require('../../assets/placeholderPhoto.jpg'),
     },
     {
         key: 'c',
-        name: 'Frutas Cristalizadas',
+        name: 'Clarificar',
         imageSrc: require('../../assets/placeholderPhoto.jpg'),
     },
     {
         key: 'd',
-        name: 'Gelo',
+        name: 'Gratinar',
         imageSrc: require('../../assets/placeholderPhoto.jpg'),
     },
     {
         key: 'e',
-        name: 'Bolo Decorativo',
+        name: 'Confit',
         imageSrc: require('../../assets/placeholderPhoto.jpg'),
     },
     {
         key: 'f',
-        name: 'Suco Funcional de Abacaxi',
+        name: 'Marinar',
         imageSrc: require('../../assets/placeholderPhoto.jpg'),
     },
     {
         key: 'g',
-        name: 'Água Gelada',
+        name: 'Emulsificar',
         imageSrc: require('../../assets/placeholderPhoto.jpg'),
     },
     {
         key: 'h',
-        name: 'Bolo Verde',
+        name: 'Dourar',
         imageSrc: require('../../assets/placeholderPhoto.jpg'),
     },
 ]
