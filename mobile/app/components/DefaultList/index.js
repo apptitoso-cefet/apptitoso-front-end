@@ -15,7 +15,7 @@ const DefaultList = props => {
                         <List.Item
                             title={item.name}
                             right={() => <List.Icon icon={props.icon} />}
-                            onPress={props.onPress}
+                            onPress={item.onPress}
                         />
                     )
                 }}

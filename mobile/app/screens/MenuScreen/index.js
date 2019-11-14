@@ -21,23 +21,30 @@ const MenuScreen = ({ navigation }) => {
         },
         {
             key: '3',
+            name: 'Conceitos culinários',
+            onPress: () => {
+                navigation.navigate('CulinaryConceptsList')
+            },
+        },
+        {
+            key: '4',
+            name: 'Cadastrar nova receita',
+            onPress: () => {
+                navigation.navigate('RecipeCreation')
+            },
+        },
+        {
+            key: '5',
             name: 'Ajuda',
             onPress: () => {
                 navigation.navigate('Help')
             },
         },
         {
-            key: '4',
+            key: '6',
             name: 'Sobre',
             onPress: () => {
                 navigation.navigate('About')
-            },
-        },
-        {
-            key: '5',
-            name: 'Conceitos culinários',
-            onPress: () => {
-                navigation.navigate('CulinaryConceptsList')
             },
         },
     ]
