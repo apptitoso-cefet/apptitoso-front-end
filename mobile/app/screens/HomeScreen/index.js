@@ -6,7 +6,7 @@ import BottomTab from '../../routes/BottomTabAppNavigator'
 
 const homeData = [
     {
-        title: 'aaaa',
+        title: 'Apptitoso',
         data: [
             [
                 { key: 5, name: 'bla ' },
