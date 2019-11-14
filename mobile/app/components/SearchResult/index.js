@@ -4,6 +4,8 @@ import { Text } from 'react-native-paper'
 import RecipeListItem from '../RecipeListItem'
 import style from './style'
 
+const notUsedListData = []
+
 const listData = [
     {
         key: 'a',
@@ -48,11 +50,12 @@ const listData = [
 ]
 
 const SearchResult = props => {
+    const query = listData.filter(item => item.name.include(searchText))
     return (
         <View style={{ ...style.container, ...props.style }}>
             <FlatList
                 style={style.list}
-                data={listData}
+                data={query}
                 renderItem={({ item }) => (
                     <RecipeListItem name={item.name} imageSrc={item.imageSrc} />
                 )}
@@ -65,6 +68,10 @@ const SearchResult = props => {
             />
         </View>
     )
+}
+
+RecipeDetailField.propTypes = {
+    searchText: PropTypes.string.isRequired,
 }
 
 export default SearchResult

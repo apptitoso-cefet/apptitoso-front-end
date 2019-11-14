@@ -7,11 +7,12 @@ import BottomTab from '../../routes/BottomTabAppNavigator'
 import style from './style'
 
 const SearchResultsScreen = ({ navigation }) => {
+    const [text, setText] = useState("")
     return (
         <View style={style.container}>
             <Header showBackAction />
-            <SearchField style={style.searchField} />
-            <SearchResult style={style.result} />
+            <SearchField style={style.searchField} onChangeText={(value)=>setText(value)} />
+            <SearchResult style={style.result searchText=text} />
         </View>
     )
 }
@@ -20,5 +21,7 @@ SearchResultsScreen.navigationOptions = {
     title: 'SearchResults',
     header: null,
 }
+
+
 
 export default SearchResultsScreen
