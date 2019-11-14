@@ -12,5 +12,7 @@ export const style = StyleSheet.create({
     },
     textContainer: {
         flex: 3,
+        textAlign: 'justify',
+        padding: 10,
     },
 })

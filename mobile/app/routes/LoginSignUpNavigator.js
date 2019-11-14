@@ -1,7 +1,7 @@
 import React from 'react'
 import LoginScreen from '../screens/LoginScreen'
 import SignUpScreen from '../screens/SignUpScreen'
-import { createStackNavigator } from 'react-navigation'
+import { createStackNavigator, createAppContainer } from 'react-navigation'
 
 const LoginStack = createStackNavigator(
     {
@@ -13,4 +13,4 @@ const LoginStack = createStackNavigator(
     }
 )
 
-export default LoginStack
+export default createAppContainer(LoginStack)

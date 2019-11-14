@@ -10,9 +10,9 @@ const BottomTab = props => {
     const [index, setIndex] = useState(0)
 
     const routes = [
-        { key: 'home', title: 'Home', icon: 'info-outline' },
-        { key: 'search', title: 'Search', icon: 'info-outline' },
-        { key: 'saved', title: 'Saved', icon: 'info-outline' },
+        { key: 'home', title: 'Home', icon: 'home' },
+        { key: 'search', title: 'Search', icon: 'search' },
+        { key: 'saved', title: 'Saved', icon: 'star' },
         { key: 'menu', title: 'Menu', icon: 'info-outline' },
     ]
 
