@@ -52,7 +52,6 @@ const CulinaryConceptsListScreen = ({ navigation }) => {
 
     return (
         <View style={style.container}>
-            <Header subtitle='Conceitos Culinários' showBackAction />
             <DefaultList
                 style={{ flex: 1 }}
                 items={listData}
