@@ -8,7 +8,7 @@ const { width } = Dimensions.get('window')
 
 export const HorizontalListCardItem = props => {
     return (
-        <TouchableHighlight style={{ heigth: 20 }}>
+        <TouchableHighlight style={{ heigth: 20 }} onPress={props.item.onPress}>
             <Card
                 key={() => props.item.key.toString()}
                 style={{ width: width / 2, margin: 5 }}

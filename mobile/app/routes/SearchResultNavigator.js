@@ -5,7 +5,12 @@ import { createStackNavigator, createAppContainer } from 'react-navigation'
 
 const SearchStack = createStackNavigator(
     {
-        SearchResults: SearchResultsScreen,
+        SearchResults: {
+            screen: SearchResultsScreen,
+            navigationOptions: () => {
+                header: null
+            },
+        },
         RecipeExecuteNavigator: RecipeExecuteNavigator,
     },
     {

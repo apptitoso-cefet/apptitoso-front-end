@@ -22,7 +22,7 @@ const SearchResultsScreen = ({ navigation }) => {
 
 SearchResultsScreen.navigationOptions = {
     title: 'SearchResults',
-    header: 'none',
+    header: null,
 }
 
 export default SearchResultsScreen

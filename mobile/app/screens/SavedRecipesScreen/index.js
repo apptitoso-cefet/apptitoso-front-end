@@ -56,4 +56,8 @@ const PostedRecipesScreen = props => {
     )
 }
 
+PostedRecipesScreen.navigationOptions = {
+    header: null,
+}
+
 export default PostedRecipesScreen
